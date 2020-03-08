@@ -14,7 +14,7 @@ function onCanPlay( event )
 
 function onGetUserMediaSuccess( stream )
 {
-    video.srcObject = stream;
+	video.srcObject = stream;
 }
 
 function onGetUserMediaError( error )
@@ -28,10 +28,10 @@ function render()
 	var scale = Math.min(canvas.width / video.videoWidth, canvas.height / video.videoHeight);
 
 	// Find the top left of the video on the canvas.
-    var height = video.videoHeight;
-    var width = video.videoWidth;
-    var top = canvas.height / 2 - (height / 2 ) * scale;
-    var left = canvas.width / 2 - (width / 2 ) * scale;
+	var height = video.videoHeight;
+	var width = video.videoWidth;
+	var top = canvas.height / 2 - (height / 2 ) * scale;
+	var left = canvas.width / 2 - (width / 2 ) * scale;
 
 	// Render.
 	context.clearRect(0, 0, canvas.width, canvas.height);

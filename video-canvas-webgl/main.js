@@ -52,7 +52,7 @@ function onCanPlay( event )
 
 function onGetUserMediaSuccess( stream )
 {
-    video.srcObject = stream;
+	video.srcObject = stream;
 }
 
 function onGetUserMediaError( error )
