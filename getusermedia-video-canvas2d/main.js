@@ -24,7 +24,6 @@ function render()
 	var top = canvas.height / 2 - (height / 2 ) * scale;
 	var left = canvas.width / 2 - (width / 2 ) * scale;
 
-	// Render.
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	context.drawImage(video, left, top, width * scale, height * scale);
 
