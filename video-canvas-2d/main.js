@@ -4,22 +4,13 @@ var video = document.getElementById("video");
 var canvas = document.getElementById("canvas");;
 var context = canvas.getContext("2d");
 
-function onCanPlay( event )
-{
-	canvas.width = video.videoWidth;
-	canvas.height = video.videoHeight;
+main();
 
-	window.requestAnimationFrame(render);
-}
-
-function onGetUserMediaSuccess( stream )
+function main()
 {
-	video.srcObject = stream;
-}
+	video.addEventListener("canplay", onCanPlay);
 
-function onGetUserMediaError( error )
-{
-	alert("Get user media error: " + error);
+	window.navigator.mediaDevices.getUserMedia({ video: true }).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
 }
 
 function render()
@@ -40,11 +31,20 @@ function render()
 	window.requestAnimationFrame(render);
 }
 
-function main()
+function onCanPlay( event )
 {
-	video.addEventListener("canplay", onCanPlay);
+	canvas.width = video.videoWidth;
+	canvas.height = video.videoHeight;
 
-	window.navigator.mediaDevices.getUserMedia({ video: true }).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
+	window.requestAnimationFrame(render);
 }
 
-main();
+function onGetUserMediaSuccess( stream )
+{
+	video.srcObject = stream;
+}
+
+function onGetUserMediaError( error )
+{
+	alert("Get user media error: " + error);
+}

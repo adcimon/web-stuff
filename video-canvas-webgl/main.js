@@ -4,10 +4,6 @@ var video = document.getElementById("video");
 var canvas = document.getElementById("canvas");
 var gl = canvas.getContext("webgl");
 
-var vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
-var indices = [0, 1, 2, 0, 2, 3];
-var textureCoordinates = [1, 0, 1, 1, 0, 1, 0, 0];
-
 var vertexBuffer = null;
 var indexBuffer = null;
 var textureCoordinateBuffer = null;
@@ -42,39 +38,59 @@ void main()
 }
 `;
 
-function onCanPlay( event )
+main();
+
+function main()
 {
-	canvas.width = video.videoWidth;
-	canvas.height = video.videoHeight;
+	init();
+
+	video.addEventListener("canplay", onCanPlay);
+
+	window.navigator.mediaDevices.getUserMedia({ video: true }).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
+}
+
+function init()
+{
+	createBuffers();
+	createTexture();
+	createProgram();
+}
+
+function render()
+{
+	gl.useProgram(program);
+
+	bindBuffers();
+
+	updateTexture();
+
+	bindTexture();
+
+	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT | gl.STENCIL_BUFFER_BIT);
+	gl.viewport(0, 0, canvas.width, canvas.height);
+	gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);
 
 	window.requestAnimationFrame(render);
-}
-
-function onGetUserMediaSuccess( stream )
-{
-	video.srcObject = stream;
-}
-
-function onGetUserMediaError( error )
-{
-	alert("Get user media error: " + error);
 }
 
 function createBuffers()
 {
 	// Vertex buffer.
+	var vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
 	vertexBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 	gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
 	gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
 	// Index buffer.
+	var indices = [0, 1, 2, 0, 2, 3];
 	indexBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 	gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
 	gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
 
 	// Texture coordinate buffer.
+	var textureCoordinates = [1, 0, 1, 1, 0, 1, 0, 0];
 	textureCoordinateBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordinateBuffer);
 	gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(textureCoordinates), gl.STATIC_DRAW);
@@ -187,37 +203,20 @@ function createProgram()
 	gl.linkProgram(program);
 }
 
-function init()
+function onCanPlay( event )
 {
-	createBuffers();
-	createTexture();
-	createProgram();
-}
-
-function render()
-{
-	gl.useProgram(program);
-
-	bindBuffers();
-
-	updateTexture();
-
-	bindTexture();
-
-	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT | gl.STENCIL_BUFFER_BIT);
-	gl.viewport(0, 0, canvas.width, canvas.height);
-	gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
+	canvas.width = video.videoWidth;
+	canvas.height = video.videoHeight;
 
 	window.requestAnimationFrame(render);
 }
 
-function main()
+function onGetUserMediaSuccess( stream )
 {
-	init();
-
-	video.addEventListener("canplay", onCanPlay);
-
-	window.navigator.mediaDevices.getUserMedia({ video: true }).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
+	video.srcObject = stream;
 }
 
-main();
+function onGetUserMediaError( error )
+{
+	alert("Get user media error: " + error);
+}
