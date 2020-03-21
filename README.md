@@ -1,2 +1,3 @@
 # HTML Examples
-A collection of HTML examples.
+
+Collection of HTML examples.
