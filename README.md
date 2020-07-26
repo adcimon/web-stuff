@@ -2,10 +2,10 @@
 
 Collection of HTML examples.
 
-* https://adcimon.github.io/flex-container
-* https://adcimon.github.io/getusermedia-video-canvas2d
-* https://adcimon.github.io/getusermedia-video-canvaswebgl 
-* https://adcimon.github.io/getusermedia-video 
-* https://adcimon.github.io/helloworld
-* https://adcimon.github.io/iframe 
-* https://adcimon.github.io/svg
+* https://adcimon.github.io/html-examples/flex-container
+* https://adcimon.github.io/html-examples/getusermedia-video-canvas2d
+* https://adcimon.github.io/html-examples/getusermedia-video-canvaswebgl 
+* https://adcimon.github.io/html-examples/getusermedia-video 
+* https://adcimon.github.io/html-examples/helloworld
+* https://adcimon.github.io/html-examples/iframe 
+* https://adcimon.github.io/html-examples/svg
