@@ -1,6 +1,4 @@
-"use strict";
-
-var video = document.getElementById("video");
+var video;
 
 var constraints =
 {
@@ -8,10 +6,12 @@ var constraints =
 	video: true
 }
 
-main();
+window.addEventListener("load", main);
 
 function main()
 {
+	video = document.getElementById("video");
+
 	window.navigator.mediaDevices.getUserMedia(constraints).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
 }
 
@@ -22,5 +22,5 @@ function onGetUserMediaSuccess( stream )
 
 function onGetUserMediaError( error )
 {
-	alert("Get user media error: " + error);
+	alert(error);
 }

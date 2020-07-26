@@ -1,16 +1,8 @@
-"use strict";
+var video, canvas, gl;
 
-var video = document.getElementById("video");
-var canvas = document.getElementById("canvas");
-var gl = canvas.getContext("webgl");
+var vertexBuffer, indexBuffer, textureCoordinateBuffer;
 
-var vertexBuffer = null;
-var indexBuffer = null;
-var textureCoordinateBuffer = null;
-
-var texture = null;
-
-var program = null;
+var texture, program;
 
 var vertexSource =
 `
@@ -38,15 +30,25 @@ void main()
 }
 `;
 
-main();
+var constraints =
+{
+	audio: false,
+	video: true
+}
+
+window.addEventListener("load", main);
 
 function main()
 {
+	video = document.getElementById("video");
+	canvas = document.getElementById("canvas");
+	gl = canvas.getContext("webgl");
+
 	init();
 
 	video.addEventListener("canplay", onCanPlay);
 
-	window.navigator.mediaDevices.getUserMedia({ video: true }).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
+	window.navigator.mediaDevices.getUserMedia(constraints).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
 }
 
 function init()
@@ -180,7 +182,7 @@ function createShader( source, type )
 	if( !compiled )
 	{
 		var log = gl.getShaderInfoLog(shader);
-		console.log("Shader error: " + log);
+		console.log(log);
 		return null;
 	}
 
@@ -218,5 +220,5 @@ function onGetUserMediaSuccess( stream )
 
 function onGetUserMediaError( error )
 {
-	alert("Get user media error: " + error);
+	alert(error);
 }

@@ -1,16 +1,22 @@
-"use strict";
+var video, canvas, context;
 
-var video = document.getElementById("video");
-var canvas = document.getElementById("canvas");;
-var context = canvas.getContext("2d");
+var constraints =
+{
+	audio: false,
+	video: true
+}
 
-main();
+window.addEventListener("load", main);
 
 function main()
 {
+	video = document.getElementById("video");
+	canvas = document.getElementById("canvas");;
+	context = canvas.getContext("2d");
+
 	video.addEventListener("canplay", onCanPlay);
 
-	window.navigator.mediaDevices.getUserMedia({ video: true }).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
+	window.navigator.mediaDevices.getUserMedia(constraints).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
 }
 
 function render()
@@ -45,5 +51,5 @@ function onGetUserMediaSuccess( stream )
 
 function onGetUserMediaError( error )
 {
-	alert("Get user media error: " + error);
+	alert(error);
 }
