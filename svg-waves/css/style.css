@@ -1,0 +1,91 @@
+:root
+{
+    --depths-color: rgba(52, 152, 219, 1);
+    --sky-color: rgba(183, 232, 235, 1);
+    --light-color: rgba(255, 254, 234, 1);
+    --wave1-color: rgba(70, 230, 240, 1);
+    --wave2-color: rgba(1, 168, 234, 0.7);
+}
+
+html
+{
+    /* Size */
+	height: 100%;
+
+    /* Space */
+    margin: 0;
+}
+
+body
+{
+    /* Size */
+	height: 100%;
+
+    /* Space */
+    margin: 0;
+
+    /* Style */
+    background: radial-gradient(ellipse at center, var(--light-color) 35%, var(--sky-color) 100%);
+}
+
+.sky
+{
+    /* Size */
+    height: 200px;
+    width: 100%;
+}
+
+.sea
+{
+    /* Size */
+    height: 100%;
+    width: 100%;
+}
+
+.surface
+{
+    /* Position */
+    position: relative;
+
+    /* Size */
+    height: 300px;
+    width: 100%;
+}
+
+.wave
+{
+    /* Position */
+    position: absolute;
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+}
+
+.wave1-color
+{
+    /* Style */
+    stop-color: var(--wave1-color);
+}
+
+.wave2-color
+{
+    /* Style */
+    stop-color: var(--wave2-color);
+}
+
+.depths
+{
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Style */
+    background-color: var(--depths-color);
+}
+
+.depths-color
+{
+    /* Style */
+    stop-color: var(--depths-color);
+}

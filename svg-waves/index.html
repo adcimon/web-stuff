@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>SVG - Waves</title>
+
+	<meta charset="utf-8">
+
+	<meta name="author" content="adcimon">
+	<meta name="description" content="portfolio">
+	<meta name="keywords" content=""/>
+	<meta name="language" content="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <script type="text/javascript" src="js/wave.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+
+	<div class="sky">
+	</div>
+
+    <div class="sea">
+
+        <div class="surface">
+        	<div class="wave">
+	            <svg width="100%" height="100%" fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                <defs>
+	                    <linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="0%" x2="0%" y1="0%" y2="100%">
+	                        <stop class="wave2-color" offset="30%"/>
+	                        <stop class="depths-color" offset="100%"/>
+	                    </linearGradient>
+	                </defs>
+	                <path id="path2" d="" fill="url(#gradient2)"/>
+	            </svg>
+            </div>
+        	<div class="wave">
+	            <svg width="100%" height="100%" fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	                <defs>
+	                    <linearGradient id="gradient1" gradientUnits="userSpaceOnUse" x1="0%" x2="0%" y1="0%" y2="100%">
+	                        <stop class="wave1-color" offset="30%"/>
+	                        <stop class="depths-color" offset="100%"/>
+	                    </linearGradient>
+	                </defs>
+	                <path id="path1" d="" fill="url(#gradient1)"/>
+	            </svg>
+            </div>
+        </div>
+
+        <div class="depths">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
