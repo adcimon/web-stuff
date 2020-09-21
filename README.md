@@ -9,3 +9,5 @@ Collection of HTML examples.
 * [Hello World](https://adcimon.github.io/html-examples/helloworld)
 * [Iframe](https://adcimon.github.io/html-examples/iframe)
 * [SVG](https://adcimon.github.io/html-examples/svg)
+* [SVG Waves](https://adcimon.github.io/html-examples/svg-waves)
+* [Typewriter](https://adcimon.github.io/html-examples/typewriter)
