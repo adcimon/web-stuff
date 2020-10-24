@@ -1,6 +1,8 @@
-window.addEventListener("load", onLoad);
+"use strict";
 
-function onLoad()
+window.addEventListener("load", main);
+
+function main()
 {
 	// Wave 1.
 	let wave1 = new Wave(document.querySelector("#path1"),
