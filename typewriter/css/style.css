@@ -26,22 +26,23 @@ body
     /* Style */
     background: radial-gradient(ellipse at center, rgba(196, 223, 208, 1) 35%, rgba(27, 181, 123, 1) 100%);
 
-    /* Other */
+    /* Misc */
     user-select: none;
 }
 
 .container
 {
-    /* Size */
-    height: 100%;
-    width: 100%;
-
-    /* Flex Container */
+	/* Layout */
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+
+    /* Size */
+    height: 100%;
+    width: 100%;
 }
 
 #text

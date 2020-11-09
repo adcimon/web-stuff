@@ -1,32 +1,42 @@
 .flex-container
 {
+	/* Layout */
+	display: flex;
     align-content: stretch;
     align-items: center;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    /* Text */
     text-align: center;
 }
 
 .item
 {
+	/* Space */
     padding: 10px;
 }
 
 .name
 {
+	/* Size */
+    width: 100%;
+
+	/* Style */
     background-color: black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
-    width: 100%;
 }
 
 .video
 {
-    border: 3px solid black;
-    box-sizing: border-box;
+	/* Size */
     height: auto;
     width: 100%;
+
+	/* Style */
+    border: 3px solid black;
+    box-sizing: border-box;
 }
