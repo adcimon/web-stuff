@@ -12,3 +12,4 @@ Collection of web experiments.
 * [SVG Waves](https://adcimon.github.io/web-experiments/svg-waves)
 * [SVG](https://adcimon.github.io/web-experiments/svg)
 * [Typewriter](https://adcimon.github.io/web-experiments/typewriter)
+* [Video Mosaic](https://adcimon.github.io/web-experiments/video-mosaic)
