@@ -2,41 +2,41 @@
 {
 	/* Layout */
 	display: flex;
-    align-content: stretch;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+	align-content: stretch;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 
-    /* Text */
-    text-align: center;
+	/* Text */
+	text-align: center;
 }
 
 .flex-item
 {
 	/* Space */
-    padding: 10px;
+	padding: 10px;
 }
 
 .name
 {
 	/* Size */
-    width: 100%;
+	width: 100%;
 
 	/* Style */
-    background-color: black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
+	background-color: black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
 }
 
 .video
 {
 	/* Size */
-    height: auto;
-    width: 100%;
+	height: auto;
+	width: 100%;
 
 	/* Style */
-    border: 3px solid black;
-    box-sizing: border-box;
+	border: 3px solid black;
+	box-sizing: border-box;
 }

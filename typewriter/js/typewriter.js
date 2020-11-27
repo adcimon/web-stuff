@@ -21,6 +21,7 @@ class Typewriter
 
 			let template = document.createElement("template");
 			template.innerHTML = span;
+
 			let element = template.content.firstChild;
 			container.appendChild(element);
 		}

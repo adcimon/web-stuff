@@ -1,0 +1,9 @@
+iframe
+{
+	/* Size */
+	height: 300px;
+	width: 300px;
+
+	/* Style */
+	border: 3px solid black;
+}
