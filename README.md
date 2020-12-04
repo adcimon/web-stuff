@@ -9,6 +9,7 @@ Collection of web experiments.
 * [Hello World](https://adcimon.github.io/web-experiments/helloworld)
 * [Iframe](https://adcimon.github.io/web-experiments/iframe)
 * [Mouse Animation](https://adcimon.github.io/web-experiments/mouse-animation)
+* [SVG Typewriter](https://adcimon.github.io/web-experiments/svg-typewriter)
 * [SVG Waves](https://adcimon.github.io/web-experiments/svg-waves)
 * [SVG](https://adcimon.github.io/web-experiments/svg)
 * [Typewriter](https://adcimon.github.io/web-experiments/typewriter)

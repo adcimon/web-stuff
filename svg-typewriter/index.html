@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>SVG Typewriter</title>
+
+    <meta charset="utf-8">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<svg width="565px" height="30px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<path id="path">
+				<animate attributeName="d" from="m5,25 h0" to="m5,25 h1000" dur="5s" begin="0s" repeatCount="indefinite"/>
+			</path>
+			<text id="text">
+				<textPath xlink:href="#path">We dream in colors borrowed from the sea.</textPath>
+			</text>
+		</svg>
+	</div>
+
+</body>
+
+</html>

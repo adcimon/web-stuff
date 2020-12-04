@@ -38,7 +38,7 @@ function resize()
 {
 	let containerWidth = container.getBoundingClientRect().width;
 	let containerHeight = container.getBoundingClientRect().height;
-	let margin = 10;
+	let margin = 30;
 	let itemCount = document.getElementsByClassName("item").length;
 	let aspectRatio = 16 / 9;
 
