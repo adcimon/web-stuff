@@ -12,5 +12,6 @@ Collection of web experiments.
 * [SVG Typewriter](https://adcimon.github.io/web-experiments/svg-typewriter)
 * [SVG Waves](https://adcimon.github.io/web-experiments/svg-waves)
 * [SVG](https://adcimon.github.io/web-experiments/svg)
+* [Threejs Template](https://adcimon.github.io/web-experiments/threejs-template)
 * [Typewriter](https://adcimon.github.io/web-experiments/typewriter)
 * [Video Mosaic](https://adcimon.github.io/web-experiments/video-mosaic)
