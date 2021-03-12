@@ -22,13 +22,13 @@ function main()
 function render()
 {
 	// The video may not match the canvas size so find a scale to fit.
-	var scale = Math.min(canvas.width / video.videoWidth, canvas.height / video.videoHeight);
+	let scale = Math.min(canvas.width / video.videoWidth, canvas.height / video.videoHeight);
 
 	// Find the top left of the video on the canvas.
-	var height = video.videoHeight;
-	var width = video.videoWidth;
-	var top = canvas.height / 2 - (height / 2 ) * scale;
-	var left = canvas.width / 2 - (width / 2 ) * scale;
+	let height = video.videoHeight;
+	let width = video.videoWidth;
+	let top = canvas.height / 2 - (height / 2 ) * scale;
+	let left = canvas.width / 2 - (width / 2 ) * scale;
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	context.drawImage(video, left, top, width * scale, height * scale);
