@@ -8,11 +8,8 @@ window.addEventListener("resize", resize);
 function main()
 {
 	initialize();
-
 	createScene();
-
 	resize();
-
 	render();
 }
 
