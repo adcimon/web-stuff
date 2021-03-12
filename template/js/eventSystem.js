@@ -12,12 +12,12 @@ function EventSystem()
  */
 EventSystem.prototype.on = function( event, listener )
 {
-    if( typeof this.events[event] !== "object" )
-    {
-        this.events[event] = [];
-    }
+	if( typeof this.events[event] !== "object" )
+	{
+		this.events[event] = [];
+	}
 
-    this.events[event].push(listener);
+	this.events[event].push(listener);
 }
 
 /**
@@ -27,14 +27,14 @@ EventSystem.prototype.on = function( event, listener )
  */
 EventSystem.prototype.off = function( event, listener )
 {   
-    if( typeof this.events[event] === "object" )
-    {
-        let index = indexOf(this.events[event], listener);
-        if( index > -1 )
-        {
-            this.events[event].splice(index, 1);
-        }
-    }
+	if( typeof this.events[event] === "object" )
+	{
+		let index = indexOf(this.events[event], listener);
+		if( index > -1 )
+		{
+			this.events[event].splice(index, 1);
+		}
+	}
 }
 
 /**
@@ -43,14 +43,14 @@ EventSystem.prototype.off = function( event, listener )
  */
 EventSystem.prototype.emit = function( event )
 {
-    let args = [].slice.call(arguments, 1);
+	let args = [].slice.call(arguments, 1);
 
-    if( typeof this.events[event] === "object" )
-    {
-        let listeners = this.events[event].slice();
-        for( let i = 0; i < listeners.length; i++ )
-        {
-            listeners[i].apply(this, args);
-        }
-    }
+	if( typeof this.events[event] === "object" )
+	{
+		let listeners = this.events[event].slice();
+		for( let i = 0; i < listeners.length; i++ )
+		{
+			listeners[i].apply(this, args);
+		}
+	}
 }
