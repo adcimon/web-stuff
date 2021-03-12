@@ -1,0 +1,182 @@
+:root
+{
+    --dream-background-color: rgba(24, 26, 53, 1);
+    --dream-button-color: rgba(56, 152, 236, 1);
+    --dream-card-shadow-color: rgba(0, 68, 255, 0);
+    --dream-card-hover-shadow-color: rgba(0, 68, 255, 0.4);
+    --dream-item-color: rgba(131, 145, 255, 0.2);
+    --dream-link-color: rgba(0, 170, 255, 1);
+    --dream-focus-color: rgba(255, 122, 32, 1);
+    --dream-focus-shadow-color: rgba(255, 0, 0, 1);
+    --dream-focus-shadow-size: 20px;
+    --dream-font: "Alegreya Sans";
+    --dream-font-color: rgba(203, 227, 255, 0.75);
+    --dream-panel-border-color: rgba(131, 145, 255, 0.2);
+    --dream-panel-color: rgba(33, 38, 77, 1);
+}
+
+.dream-body
+{
+    /* Text */
+    font-family: var(--dream-font), sans-serif;
+
+	/* Style */
+    background-color: var(--dream-background-color);
+    color: var(--dream-font-color);
+}
+
+.dream-container
+{
+    /* Space */
+    padding: 10px 25px;
+
+    /* Style */
+    background-color: var(--dream-panel-color);
+    background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.2));
+    border-color: var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color);
+    border-radius: 10px;
+    border-style: solid none none none;
+    border-width: 1px;
+    box-shadow: 0 0 20px -1px rgba(0, 0, 0, 1);
+    overflow: hidden;
+}
+
+.dream-header
+{
+	/* Text */
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-shadow: 0 0 var(--dream-focus-shadow-size) var(--dream-focus-shadow-color);
+
+	/* Style */
+	color: var(--dream-focus-color);
+}
+
+.dream-link
+{
+    /* Text */
+    font-weight: 700;
+    text-decoration: none;
+
+    /* Style */
+    background-color: transparent;
+    color: var(--dream-link-color);
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.dream-link:active
+{
+    /* Style */
+    outline: none;
+}
+
+.dream-link:hover
+{
+    /* Style */
+    color: var(--dream-focus-color);
+    outline: none;
+}
+
+.dream-link:focus
+{
+    /* Style */
+    outline: none;
+}
+
+.dream-button
+{
+    /* Space */
+    padding: 0.25rem 1rem;
+
+    /* Text */
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    /* Style */
+    background-color: var(--dream-button-color);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dream-button:hover
+{
+    /* Style */
+	background-color: var(--dream-focus-color);
+}
+
+.dream-video
+{
+    /* Size */
+    object-fit: contain;
+
+    /* Style */
+	border: 1px solid rgba(0, 0, 0, 1);
+	border-radius: 5px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 1);
+    outline: none;
+}
+
+.dream-item
+{
+	/* Space */
+	margin-bottom: 0.8rem;
+	padding: 0.7rem 1.6rem 0.7rem 1rem;
+
+	/* Style */
+	background-color: rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid var(--dream-item-color);
+	border-left: 4px solid var(--dream-item-color);
+	transition: border-color 0.3s ease;
+}
+
+.dream-item:hover
+{
+	/* Style */
+	border-left-color: var(--dream-focus-color);
+}
+
+.dream-card
+{
+	/* Style */
+	background-color: var(--dream-item-color);
+	border-radius: 15px;
+	box-shadow: inset 0 0 2px 2px var(--dream-item-color), 0 10px 30px 6px var(--dream-card-shadow-color);
+	transition: box-shadow 0.3s ease;
+}
+
+.dream-card:hover
+{
+	/* Style */
+	box-shadow: inset 0 0 2px 2px var(--dream-item-color), 0 10px 40px 6px var(--dream-card-hover-shadow-color);
+	cursor: pointer;
+}
+
+.dream-chip
+{
+	/* Size */
+	height: 40px;
+	width: 40px;
+
+	/* Style */
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 100%;
+	border-style: solid;
+	border-width: 0;
+	box-shadow: inset 0 0 2px 1px var(--dream-item-color);
+	overflow: hidden;
+	transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.dream-chip:hover
+{
+	/* Style */
+	background-color: rgba(73, 94, 255, 0.27);
+	box-shadow: inset 0 0 4px -1px var(--dream-font-color), 0 0 20px 2px var(--dream-card-shadow-color);
+	cursor: pointer;
+}

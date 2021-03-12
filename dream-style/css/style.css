@@ -1,0 +1,75 @@
+html
+{
+	/* Size */
+	height: 100%;
+
+	/* Space*/
+    margin: 0;
+}
+
+body
+{
+	/* Size */
+	height: 100%;
+
+	/* Space */
+    margin: 0;
+}
+
+.content
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	height: 100%;
+	width: 100%;
+}
+
+.panel
+{
+	/* Size */
+	height: 75%;
+	width: 75%;
+
+	/* Style */
+	overflow: scroll;
+}
+
+.panel > div
+{
+	/* Space */
+	margin: 10px;
+}
+
+.center
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card
+{
+	/* Size */
+	height: 150px;
+	width: 100px;
+
+	/* Space */
+	margin: 10px;
+}
+
+.chip
+{
+	/* Space */
+	margin: 5px;
+}
