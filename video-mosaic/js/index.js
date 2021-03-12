@@ -17,11 +17,11 @@ function main()
 
 function createItem()
 {
-    let html ='<div class="item"><video src="media/video.mp4" autoplay controls loop muted></video></div>';
+	let html ='<div class="item"><video src="media/video.mp4" autoplay controls loop muted></video></div>';
 
-    let template = document.createElement("template");
-    template.innerHTML = html;
-    return template.content.childNodes[0];
+	let template = document.createElement("template");
+	template.innerHTML = html;
+	return template.content.childNodes[0];
 }
 
 function populate()
