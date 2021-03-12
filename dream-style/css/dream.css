@@ -1,44 +1,44 @@
 :root
 {
-    --dream-background-color: rgba(24, 26, 53, 1);
-    --dream-button-color: rgba(56, 152, 236, 1);
-    --dream-card-shadow-color: rgba(0, 68, 255, 0);
-    --dream-card-hover-shadow-color: rgba(0, 68, 255, 0.4);
-    --dream-item-color: rgba(131, 145, 255, 0.2);
-    --dream-link-color: rgba(0, 170, 255, 1);
-    --dream-focus-color: rgba(255, 122, 32, 1);
-    --dream-focus-shadow-color: rgba(255, 0, 0, 1);
-    --dream-focus-shadow-size: 20px;
-    --dream-font: "Alegreya Sans";
-    --dream-font-color: rgba(203, 227, 255, 0.75);
-    --dream-panel-border-color: rgba(131, 145, 255, 0.2);
-    --dream-panel-color: rgba(33, 38, 77, 1);
+	--dream-background-color: rgba(24, 26, 53, 1);
+	--dream-button-color: rgba(56, 152, 236, 1);
+	--dream-card-shadow-color: rgba(0, 68, 255, 0);
+	--dream-card-hover-shadow-color: rgba(0, 68, 255, 0.4);
+	--dream-item-color: rgba(131, 145, 255, 0.2);
+	--dream-link-color: rgba(0, 170, 255, 1);
+	--dream-focus-color: rgba(255, 122, 32, 1);
+	--dream-focus-shadow-color: rgba(255, 0, 0, 1);
+	--dream-focus-shadow-size: 20px;
+	--dream-font: "Alegreya Sans";
+	--dream-font-color: rgba(203, 227, 255, 0.75);
+	--dream-panel-border-color: rgba(131, 145, 255, 0.2);
+	--dream-panel-color: rgba(33, 38, 77, 1);
 }
 
 .dream-body
 {
-    /* Text */
-    font-family: var(--dream-font), sans-serif;
+	/* Text */
+	font-family: var(--dream-font), sans-serif;
 
 	/* Style */
-    background-color: var(--dream-background-color);
-    color: var(--dream-font-color);
+	background-color: var(--dream-background-color);
+	color: var(--dream-font-color);
 }
 
 .dream-container
 {
-    /* Space */
-    padding: 10px 25px;
+	/* Space */
+	padding: 10px 25px;
 
-    /* Style */
-    background-color: var(--dream-panel-color);
-    background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.2));
-    border-color: var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color);
-    border-radius: 10px;
-    border-style: solid none none none;
-    border-width: 1px;
-    box-shadow: 0 0 20px -1px rgba(0, 0, 0, 1);
-    overflow: hidden;
+	/* Style */
+	background-color: var(--dream-panel-color);
+	background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.2));
+	border-color: var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color);
+	border-radius: 10px;
+	border-style: solid none none none;
+	border-width: 1px;
+	box-shadow: 0 0 20px -1px rgba(0, 0, 0, 1);
+	overflow: hidden;
 }
 
 .dream-header
@@ -54,72 +54,72 @@
 
 .dream-link
 {
-    /* Text */
-    font-weight: 700;
-    text-decoration: none;
+	/* Text */
+	font-weight: 700;
+	text-decoration: none;
 
-    /* Style */
-    background-color: transparent;
-    color: var(--dream-link-color);
-    cursor: pointer;
-    outline: none;
-    transition: color 0.3s ease;
+	/* Style */
+	background-color: transparent;
+	color: var(--dream-link-color);
+	cursor: pointer;
+	outline: none;
+	transition: color 0.3s ease;
 }
 
 .dream-link:active
 {
-    /* Style */
-    outline: none;
+	/* Style */
+	outline: none;
 }
 
 .dream-link:hover
 {
-    /* Style */
-    color: var(--dream-focus-color);
-    outline: none;
+	/* Style */
+	color: var(--dream-focus-color);
+	outline: none;
 }
 
 .dream-link:focus
 {
-    /* Style */
-    outline: none;
+	/* Style */
+	outline: none;
 }
 
 .dream-button
 {
-    /* Space */
-    padding: 0.25rem 1rem;
+	/* Space */
+	padding: 0.25rem 1rem;
 
-    /* Text */
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
+	/* Text */
+	font-size: 1rem;
+	font-weight: 400;
+	text-decoration: none;
 
-    /* Style */
-    background-color: var(--dream-button-color);
-    border: none;
-    border-radius: 7px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+	/* Style */
+	background-color: var(--dream-button-color);
+	border: none;
+	border-radius: 7px;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 .dream-button:hover
 {
-    /* Style */
+	/* Style */
 	background-color: var(--dream-focus-color);
 }
 
 .dream-video
 {
-    /* Size */
-    object-fit: contain;
+	/* Size */
+	object-fit: contain;
 
-    /* Style */
+	/* Style */
 	border: 1px solid rgba(0, 0, 0, 1);
 	border-radius: 5px;
-    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 1);
-    outline: none;
+	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 1);
+	outline: none;
 }
 
 .dream-item
