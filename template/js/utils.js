@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Return a clone of the object.
  * @param {Object} object - The object to clone.
