@@ -13,13 +13,13 @@ Typewriter.prototype.write = function( text, container, settings )
 		let char = text[i];
 
 		let span = '<div id ="' + 'char' + i + '" ' +
-						'class="char" ' +
-						'style="' +
-							'animation: charAnimation ' + settings.fadeDuration + 's linear ' + (i / settings.speed) + 's forwards;' +
-							((char === '\n') ? " display: block;" : "") +
-						'">'
-						+ char +
-					'</div>';
+					'class="char" ' +
+					'style="' +
+						'animation: charAnimation ' + settings.fadeDuration + 's linear ' + (i / settings.speed) + 's forwards;' +
+						((char === '\n') ? " display: block;" : "") +
+					'">'
+					+ char +
+				'</div>';
 
 		let template = document.createElement("template");
 		template.innerHTML = span;
