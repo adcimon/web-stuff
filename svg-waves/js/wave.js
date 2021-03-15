@@ -1,166 +1,165 @@
-class Wave
+"use strict";
+
+function Wave( path, settings )
 {
-    settings =
+	this.settings =
+	{
+		container: "body",
+		height: 200,
+		amplitude: 100,
+		speed: 0.15,
+		bones: 3
+	};
+
+    if( typeof settings === "undefined" )
     {
-        container: "body",
-        height: 200,
-        amplitude: 100,
-        speed: 0.15,
-        bones: 3
+        settings = { };
+    }
+
+    this.settings = Object.assign(this.settings, settings);
+
+    this.path = path;
+    this.lastUpdate = 0;
+    this.totalTime = 0;
+    this.animationHandle = false;
+    this.tween = false;
+
+    this.resize = this.resize.bind(this);
+}
+
+Wave.prototype.getPoints = function( factor )
+{
+    let points = [];
+
+    for( let i = 0; i <= this.settings.bones; i++ )
+    {
+        let x = (i / this.settings.bones) * this.width;
+        let sinSeed = (factor + (i + (i % this.settings.bones))) * this.settings.speed * 100;
+        let sinHeight = Math.sin(sinSeed / 100) * this.settings.amplitude;
+        let y = Math.sin(sinSeed / 100) * sinHeight + this.settings.height;
+        points.push({ x: x, y: y });
+    }
+
+    return points;
+}
+
+Wave.prototype.getPath = function( points )
+{
+    let svg = "M " + points[0].x + " " + points[0].y;
+
+    let cp0 =
+    {
+        x: (points[1].x - points[0].x) / 2,
+        y: points[1].y - points[0].y + points[0].y + (points[1].y - points[0].y)
     };
 
-    constructor( path, settings )
+    svg += " C " + cp0.x + " " + cp0.y + " " + cp0.x + " " + cp0.y + " " + points[1].x + " " + points[1].y;
+
+    let prevCp = cp0;
+    let inverted = -1;
+    for( let i = 1; i < points.length - 1; i++ )
     {
-        if( typeof settings === "undefined" )
+        //let cpLength = Math.sqrt(prevCp.x * prevCp.x + prevCp.y * prevCp.y);
+        let cp1 =
         {
-            settings = { };
-        }
-
-        this.settings = Object.assign(this.settings, settings);
-
-        this.path = path;
-        this.lastUpdate = 0;
-        this.totalTime = 0;
-        this.animationHandle = false;
-        this.tween = false;
-
-        this.resize = this.resize.bind(this);
-    }
-
-    getPoints( factor )
-    {
-        let points = [];
-
-        for( let i = 0; i <= this.settings.bones; i++ )
-        {
-            let x = (i / this.settings.bones) * this.width;
-            let sinSeed = (factor + (i + (i % this.settings.bones))) * this.settings.speed * 100;
-            let sinHeight = Math.sin(sinSeed / 100) * this.settings.amplitude;
-            let y = Math.sin(sinSeed / 100) * sinHeight + this.settings.height;
-            points.push({ x: x, y: y });
-        }
-
-        return points;
-    }
-
-    getPath( points )
-    {
-        let svg = "M " + points[0].x + " " + points[0].y;
-
-        let cp0 =
-        {
-            x: (points[1].x - points[0].x) / 2,
-            y: points[1].y - points[0].y + points[0].y + (points[1].y - points[0].y)
+            x: points[i].x - prevCp.x + points[i].x,
+            y: points[i].y - prevCp.y + points[i].y
         };
 
-        svg += " C " + cp0.x + " " + cp0.y + " " + cp0.x + " " + cp0.y + " " + points[1].x + " " + points[1].y;
+        svg += " C " + cp1.x + " " + cp1.y + " " + cp1.x + " " + cp1.y + " " + points[i + 1].x + " " + points[i + 1].y;
 
-        let prevCp = cp0;
-        let inverted = -1;
-        for( let i = 1; i < points.length - 1; i++ )
-        {
-            //let cpLength = Math.sqrt(prevCp.x * prevCp.x + prevCp.y * prevCp.y);
-            let cp1 =
-            {
-                x: points[i].x - prevCp.x + points[i].x,
-                y: points[i].y - prevCp.y + points[i].y
-            };
-
-            svg += " C " + cp1.x + " " + cp1.y + " " + cp1.x + " " + cp1.y + " " + points[i + 1].x + " " + points[i + 1].y;
-
-            prevCp = cp1;
-            inverted = -inverted;
-        }
-
-        svg += " L " + this.width + " " + this.height;
-        svg += " L 0 " + this.height + " Z";
-
-        return svg;
+        prevCp = cp1;
+        inverted = -inverted;
     }
 
-    render( deltaTime )
+    svg += " L " + this.width + " " + this.height;
+    svg += " L 0 " + this.height + " Z";
+
+    return svg;
+}
+
+Wave.prototype.render = function( deltaTime )
+{
+    this.totalTime += deltaTime;
+
+    let factor = this.totalTime * Math.PI;
+    this.tween = gsap.to(this.path,
     {
-        this.totalTime += deltaTime;
+        attr: { d: this.getPath(this.getPoints(factor)) },
+        duration: 0,
+        ease: Power1.easeInOut
+    });
+}
 
-        let factor = this.totalTime * Math.PI;
-        this.tween = gsap.to(this.path,
-        {
-            attr: { d: this.getPath(this.getPoints(factor)) },
-            duration: 0,
-            ease: Power1.easeInOut
-        });
-    }
+Wave.prototype.update = function()
+{
+    let now = window.Date.now();
 
-    update()
+    if( this.lastUpdate )
     {
-        let now = window.Date.now();
+        let deltaTime = (now - this.lastUpdate) / 1000; // ms
+        this.lastUpdate = now;
 
-        if( this.lastUpdate )
-        {
-            let deltaTime = (now - this.lastUpdate) / 1000; // ms
-            this.lastUpdate = now;
-
-            this.render(deltaTime);
-        }
-        else
-        {
-            this.lastUpdate = now;
-        }
+        this.render(deltaTime);
     }
-
-    tick()
+    else
     {
-        this.update();
-        this.animationHandle = window.requestAnimationFrame(this.tick.bind(this));
+        this.lastUpdate = now;
     }
+}
 
-    resize()
+Wave.prototype.tick = function()
+{
+    this.update();
+    this.animationHandle = window.requestAnimationFrame(this.tick.bind(this));
+}
+
+Wave.prototype.resize = function()
+{
+    let rect = document.querySelector(this.settings.container).getBoundingClientRect();
+    this.width = rect.width;
+    this.height = rect.height;
+
+    this.render(0);
+}
+
+Wave.prototype.play = function()
+{
+    if( !this.animationHandle )
     {
         let rect = document.querySelector(this.settings.container).getBoundingClientRect();
         this.width = rect.width;
         this.height = rect.height;
 
-        this.render(0);
+        window.addEventListener("resize", this.resize);
+        this.animationHandle = window.requestAnimationFrame(this.tick.bind(this));
     }
+}
 
-    play()
+Wave.prototype.pause = function()
+{
+    if( this.animationHandle )
     {
-        if( !this.animationHandle )
-        {
-            let rect = document.querySelector(this.settings.container).getBoundingClientRect();
-            this.width = rect.width;
-            this.height = rect.height;
-
-            window.addEventListener("resize", this.resize);
-            this.animationHandle = window.requestAnimationFrame(this.tick.bind(this));
-        }
+        window.cancelAnimationFrame(this.animationHandle);
+        this.animationHandle = false;
+        this.lastUpdate = false;
     }
+}
 
-    pause()
+Wave.prototype.stop = function()
+{
+    this.pause();
+
+    window.removeEventListener("resize", this.resize);
+
+    this.tween.kill();
+    this.tween = gsap.set(this.path,
     {
-        if( this.animationHandle )
-        {
-            window.cancelAnimationFrame(this.animationHandle);
-            this.animationHandle = false;
-            this.lastUpdate = false;
-        }
-    }
-
-    stop()
-    {
-        this.pause();
-
-        window.removeEventListener("resize", this.resize);
-
-        this.tween.kill();
-        this.tween = gsap.set(this.path,
-        {
-            x: 0,
-            y: 0,
-            rotation: 0,
-            opacity: 0,
-            clearProps: "all",
-            attr: { d: "M0,0" }
-        });
-    }
+        x: 0,
+        y: 0,
+        rotation: 0,
+        opacity: 0,
+        clearProps: "all",
+        attr: { d: "M0,0" }
+    });
 }
