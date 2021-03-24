@@ -7,7 +7,7 @@
  */
 function clone( object )
 {
-    return Object.create(object);
+    return JSON.parse(JSON.stringify(object));
 }
 
 /** 
