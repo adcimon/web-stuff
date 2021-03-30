@@ -67,7 +67,7 @@ HTMLElement.prototype.enable = function( recursively )
         for( let i = 0; i < this.children.length; i++ )
         {
             let child = this.children[i];
-            child.disable(recursively);
+            child.enable(recursively);
             this.disabled = false;
         }
     }
