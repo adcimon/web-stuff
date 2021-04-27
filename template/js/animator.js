@@ -63,3 +63,5 @@ Animator.prototype.stop = function()
 		this.lastUpdate = undefined;
 	}
 }
+
+export { Animator };
