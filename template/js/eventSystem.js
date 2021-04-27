@@ -29,7 +29,7 @@ EventSystem.prototype.off = function( event, listener )
 {   
 	if( typeof this.events[event] === "object" )
 	{
-		let index = indexOf(this.events[event], listener);
+		let index = this.events[event].indexOf(listener);
 		if( index > -1 )
 		{
 			this.events[event].splice(index, 1);
@@ -54,3 +54,5 @@ EventSystem.prototype.emit = function( event )
 		}
 	}
 }
+
+export { EventSystem };
