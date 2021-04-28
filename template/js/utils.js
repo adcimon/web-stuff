@@ -1,6 +1,22 @@
 "use strict";
 
 /**
+ * Add a utility style sheet.
+ */
+window.addEventListener("load", function()
+{
+    let css = "body *[hidden] { display: none; } body *[invisible] { visibility: hidden; }";
+
+    let link = document.createElement("link");
+    link.setAttribute("type", "text/css");
+    link.setAttribute("rel", "stylesheet");
+    link.setAttribute("href", "data:text/css;charset=UTF-8," + encodeURIComponent(css));
+
+    let head = document.getElementsByTagName("head")[0];
+    head.appendChild(link);
+});
+
+/**
  * Return a clone of the object.
  * @param {Object} object - The object to clone.
  * @return {Object} The clone of the object.
@@ -99,14 +115,23 @@ HTMLElement.prototype.show = function()
 {
     this.hidden = false;
     this.removeAttribute("hidden");
+    this.removeAttribute("invisible");
 }
 
 /**
  * Hide the HTMLElement.
+ * @param {Boolean} invisible - Is the element invisible?
  */
-HTMLElement.prototype.hide = function()
+HTMLElement.prototype.hide = function( invisible )
 {
-    this.setAttribute("hidden", "");
+    if( invisible )
+    {
+        this.setAttribute("invisible", "");
+    }
+    else
+    {
+        this.setAttribute("hidden", "");
+    }
 }
 
 /** 
