@@ -15,10 +15,11 @@
 
 /* 1. Layout */
 
-.hidden { display: none; }
 .inline { display: inline; }
 .block { display: block; }
 .inline-block { display: inline-block; }
+.hidden { display: none; }
+.invisible { visibility: hidden; }
 
 .flex
 {
@@ -35,6 +36,7 @@
 .flex-wrap { flex-wrap: wrap; }
 
 body *[hidden] { display: none; }
+body *[invisible] { visibility: hidden; }
 
 /* 2. Position */
 
