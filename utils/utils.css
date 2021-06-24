@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+|--------------------------------------------------------------------------
+| Table of Contents
+|--------------------------------------------------------------------------
+|
+| 1. Layout
+| 2. Position
+| 3. Size
+| 4. Text
+| 5. List
+| 6. Style
+| 7. Misc
+|
+*/
+
+/* 1. Layout */
+
+.inline { display: inline; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+
+.flex
+{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;  
+}
+
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+
+body *[hidden] { display: none; }
+body *[invisible] { visibility: hidden; }
+
+/* 2. Position */
+
+.position-absolute { position: absolute; }
+.position-relative { position: relative; }
+
+.vertical-align-top { vertical-align: top; }
+.vertical-align-middle { vertical-align: middle; }
+.vertical-align-bottom { vertical-align: bottom; }
+
+/* 3. Size */
+
+.height5 { height: 5%; }
+.height10 { height: 10%; }
+.height20 { height: 20%; }
+.height25 { height: 25%; }
+.height33 { height: 33%; }
+.height50 { height: 50%; }
+.height66 { height: 66%; }
+.height75 { height: 75%; }
+.height100 { height: 100%; }
+
+.width5 { width: 5%; }
+.width10 { width: 10%; }
+.width20 { width: 20%; }
+.width25 { width: 25%; }
+.width33 { width: 33%; }
+.width50 { width: 50%; }
+.width66 { width: 66%; }
+.width75 { width: 75%; }
+.width100 { width: 100%; }
+
+.resize { resize: both; }
+.resize-horizontal { resize: horizontal; }
+.resize-vertical { resize: vertical; }
+
+/* 4. Text */
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.no-decoration { text-decoration: none; }
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.oblique { font-style: oblique; }
+.capitalize { text-transform: capitalize; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.line-through { text-decoration: line-through; }
+
+.overflow-break { overflow-wrap: break-word; }
+.overflow-ellipsis { text-overflow: ellipsis; }
+
+/* 5. List */
+
+.list-inside { list-style-position: inside; }
+.list-outside { list-style-position: outside; }
+
+.list-disc { list-style-type: disc; }
+.list-circle { list-style-type: circle; }
+.list-square { list-style-type: square; }
+.list-decimal { list-style-type: decimal; }
+.list-lower-alpha { list-style-type: lower-alpha; }
+.list-upper-alpha { list-style-type: upper-alpha; }
+.list-roman { list-style-type: upper-roman; }
+
+/* 6. Style */
+
+.no-border { border: none; }
+.no-outline { outline: none; }
+.no-overflow { overflow: hidden; }
+.no-overflow-x { overflow-x: hidden; }
+.no-overflow-y { overflow-y: hidden; }
+.scroll { overflow: auto; }
+.scroll-x { overflow-x: auto; }
+.scroll-y { overflow-y: auto; }
+
+/* 7. Misc */
+
+.debug { border: 1px dashed red !important; }
+.no-events { pointer-events: none; }
+
+.no-select
+{
+    user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+}
