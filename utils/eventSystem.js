@@ -1,4 +1,6 @@
-export function EventSystem()
+"use strict";
+
+function EventSystem()
 {
 //#region PRIVATE
 

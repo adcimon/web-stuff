@@ -2,37 +2,57 @@
 
 function Typewriter()
 {
-}
+//#region PRIVATE
 
-Typewriter.prototype.write = function( text, container, settings )
-{
-	this.empty(container);
-
-	for( let i = 0; i < text.length; i++ )
+	let write = function( text, container, settings )
 	{
-		let char = text[i];
+		let defaultSettings =
+		{
+			speed: 10,
+			fadeDuration: 0.5
+		};
 
-		let span = '<div id ="' + 'char' + i + '" ' +
-					'class="char" ' +
-					'style="' +
-						'animation: charAnimation ' + settings.fadeDuration + 's linear ' + (i / settings.speed) + 's forwards;' +
-						((char === '\n') ? " display: block;" : "") +
-					'">'
-					+ char +
-				'</div>';
+		settings = (typeof settings !== "object") ? { } : settings;
+	    settings = Object.assign(defaultSettings, settings);
 
-		let template = document.createElement("template");
-		template.innerHTML = span;
+		empty(container);
 
-		let element = template.content.firstChild;
-		container.appendChild(element);
-	}
-}
+		for( let i = 0; i < text.length; i++ )
+		{
+			let char = text[i];
 
-Typewriter.prototype.empty = function( node )
-{
-	while( node.firstChild )
+			let span = '<div id ="' + 'char' + i + '" ' +
+						'class="char" ' +
+						'style="' +
+							'animation: charAnimation ' + settings.fadeDuration + 's linear ' + (i / settings.speed) + 's forwards;' +
+							((char === '\n') ? " display: block;" : "") +
+						'">'
+						+ char +
+					'</div>';
+
+			let template = document.createElement("template");
+			template.innerHTML = span;
+
+			let element = template.content.firstChild;
+			container.appendChild(element);
+		}
+	};
+
+	let empty = function( node )
 	{
-		node.removeChild(node.lastChild);
-	}
+		while( node.firstChild )
+		{
+			node.removeChild(node.lastChild);
+		}
+	};
+
+//#endregion
+
+//#region PUBLIC
+
+	return {
+		write
+	};
+
+//#endregion
 }

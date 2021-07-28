@@ -1,4 +1,6 @@
-export function Animator()
+"use strict";
+
+function Animator()
 {
 //#region PRIVATE
 

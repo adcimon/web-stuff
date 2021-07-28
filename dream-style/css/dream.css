@@ -1,18 +1,19 @@
 :root
 {
-	--dream-background-color: rgba(24, 26, 53, 1);
-	--dream-button-color: rgba(56, 152, 236, 1);
-	--dream-card-shadow-color: rgba(0, 68, 255, 0);
-	--dream-card-hover-shadow-color: rgba(0, 68, 255, 0.4);
-	--dream-item-color: rgba(131, 145, 255, 0.2);
-	--dream-link-color: rgba(0, 170, 255, 1);
-	--dream-focus-color: rgba(255, 122, 32, 1);
-	--dream-focus-shadow-color: rgba(255, 0, 0, 1);
+	--dream-background-color: hsla(236, 37.7%, 15.1%, 1);
+	--dream-button-color: hsla(208, 82.6%, 57.3%, 1);
+	--dream-card-shadow-color: hsla(224, 100%, 50%, 0);
+	--dream-card-hover-shadow-color: hsla(224, 100%, 50%, 0.4);
+	--dream-chip-hover-color: hsla(233, 100%, 64.3%, 0.27);
+	--dream-item-color: hsla(233, 100%, 75.7%, 0.2);
+	--dream-link-color: hsla(200, 100%, 50%, 1);
+	--dream-focus-color: hsla(24, 100%, 56.3%, 1);
+	--dream-focus-shadow-color: hsla(0, 100%, 50%, 1);
 	--dream-focus-shadow-size: 20px;
 	--dream-font: "Alegreya Sans";
-	--dream-font-color: rgba(203, 227, 255, 0.75);
-	--dream-panel-border-color: rgba(131, 145, 255, 0.2);
-	--dream-panel-color: rgba(33, 38, 77, 1);
+	--dream-font-color: hsla(212, 100%, 89.8%, 0.75);
+	--dream-panel-border-color: hsla(233, 100%, 75.7%, 0.2);
+	--dream-panel-color: hsla(233, 40%, 21.6%, 1);
 }
 
 .dream-body
@@ -32,12 +33,12 @@
 
 	/* Style */
 	background-color: var(--dream-panel-color);
-	background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, rgba(0, 0, 0, 0.2));
+	background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, hsla(0, 0%, 0%, 0.2));
 	border-color: var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color) var(--dream-panel-border-color);
 	border-radius: 10px;
 	border-style: solid none none none;
 	border-width: 1px;
-	box-shadow: 0 0 20px -1px rgba(0, 0, 0, 1);
+	box-shadow: 0 0 20px -1px hsla(0, 0%, 0%, 1);
 	overflow: hidden;
 }
 
@@ -116,9 +117,9 @@
 	object-fit: contain;
 
 	/* Style */
-	border: 1px solid rgba(0, 0, 0, 1);
+	border: 1px solid hsla(0, 0%, 0%, 1);
 	border-radius: 5px;
-	box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 1);
+	box-shadow: 2px 2px 3px 0px hsla(0, 0%, 0%, 1);
 	outline: none;
 }
 
@@ -129,7 +130,7 @@
 	padding: 0.7rem 1.6rem 0.7rem 1rem;
 
 	/* Style */
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: hsla(0, 0%, 0%, 0.2);
 	border-bottom: 1px solid var(--dream-item-color);
 	border-left: 4px solid var(--dream-item-color);
 	transition: border-color 0.3s ease;
@@ -164,7 +165,7 @@
 	width: 40px;
 
 	/* Style */
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: hsla(0, 0%, 0%, 0.2);
 	border-radius: 100%;
 	border-style: solid;
 	border-width: 0;
@@ -176,7 +177,7 @@
 .dream-chip:hover
 {
 	/* Style */
-	background-color: rgba(73, 94, 255, 0.27);
+	background-color: var(--dream-chip-hover-colors);
 	box-shadow: inset 0 0 4px -1px var(--dream-font-color), 0 0 20px 2px var(--dream-card-shadow-color);
 	cursor: pointer;
 }
