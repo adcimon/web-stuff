@@ -2,8 +2,6 @@
 
 function Animator()
 {
-//#region PRIVATE
-
 	let handle = null;
 	let lastUpdate = null;
 	let callback = null;
@@ -74,14 +72,8 @@ function Animator()
 		lastUpdate = null;
 	};
 
-//#endregion
-
-//#region PUBLIC
-
 	return {
 		play,
 		stop
 	};
-
-//#endregion
 }
