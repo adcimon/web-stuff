@@ -60,16 +60,33 @@ function debounce( func, wait, immediate )
 }
 
 /**
- * Generate an unique identifier (RFC 4122: https://www.ietf.org/rfc/rfc4122.txt).
- * @return {String} The unique identifier.
+ * Generate a universally unique identifier.
+ * Reference: RFC 4122 https://www.ietf.org/rfc/rfc4122.txt
+ * @return {String} The universally unique identifier.
+ */
+function uuid()
+{
+    return uuidv4();
+}
+
+/**
+ * Generate a universally unique identifier v4.
+ * Reference: https://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid
+ * @return {String} The universally unique identifier v4.
  */
 function uuidv4()
 {
-	return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c)
-	{
-		var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-		return v.toString(16);
-	});
+    return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    );
+
+    /*
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c)
+    {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+    */
 }
 
 /**
