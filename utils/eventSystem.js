@@ -2,8 +2,6 @@
 
 function EventSystem()
 {
-//#region PRIVATE
-
 	let events = { };
 
 	/**
@@ -56,15 +54,9 @@ function EventSystem()
 		}
 	};
 
-//#endregion
-
-//#region PUBLIC
-
 	return {
 		on,
 		off,
 		emit
 	};
-
-//#endregion
 }
