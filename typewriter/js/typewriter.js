@@ -2,8 +2,6 @@
 
 function Typewriter()
 {
-//#region PRIVATE
-
 	let write = function( text, container, settings )
 	{
 		let defaultSettings =
@@ -13,7 +11,7 @@ function Typewriter()
 		};
 
 		settings = (typeof settings !== "object") ? { } : settings;
-	    settings = Object.assign(defaultSettings, settings);
+		settings = Object.assign(defaultSettings, settings);
 
 		empty(container);
 
@@ -46,13 +44,7 @@ function Typewriter()
 		}
 	};
 
-//#endregion
-
-//#region PUBLIC
-
 	return {
 		write
 	};
-
-//#endregion
 }
