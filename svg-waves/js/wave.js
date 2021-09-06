@@ -2,8 +2,6 @@
 
 function Wave( path, settings )
 {
-//#region PRIVATE
-
 	let defaultSettings =
 	{
 		container: "body",
@@ -14,14 +12,14 @@ function Wave( path, settings )
 	};
 
 	settings = (typeof settings !== "object") ? { } : settings;
-    settings = Object.assign(defaultSettings, settings);
+	settings = Object.assign(defaultSettings, settings);
 
-    let width = 0;
-    let height = 0;
-    let lastUpdate = 0;
-    let totalTime = 0;
-    let animationHandle = false;
-    let tween = false;
+	let width = 0;
+	let height = 0;
+	let lastUpdate = 0;
+	let totalTime = 0;
+	let animationHandle = false;
+	let tween = false;
 
 	let getPoints = function( factor )
 	{
@@ -160,15 +158,9 @@ function Wave( path, settings )
 	    });
 	};
 
-//#endregion
-
-//#region PUBLIC
-
 	return {
 		play,
 		pause,
 		stop
 	};
-
-//#endregion
 }
