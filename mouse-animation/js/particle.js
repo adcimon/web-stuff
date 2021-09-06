@@ -2,8 +2,6 @@
 
 function Particle( container )
 {
-//#region PRIVATE
-
 	let spawn = function( x, y )
 	{
 		let size = Math.random() * 50 + 10;
@@ -42,13 +40,7 @@ function Particle( container )
 		});
 	};
 
-//#endregion
-
-//#region PUBLIC
-
 	return {
 		spawn
 	};
-
-//#endregion
 }
