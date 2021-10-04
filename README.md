@@ -2,17 +2,30 @@
 
 Collection of web experiments.
 
-* [Dream Style](https://adcimon.github.io/web-stuff/dream-style)
-* [Flex Container](https://adcimon.github.io/web-stuff/flex-container)
-* [GetUserMedia Video](https://adcimon.github.io/web-stuff/getusermedia-video)
-* [GetUserMedia Video Canvas2D](https://adcimon.github.io/web-stuff/getusermedia-video-canvas2d)
-* [GetUserMedia Video CanvasWebGL](https://adcimon.github.io/web-stuff/getusermedia-video-canvaswebgl)
-* [HTML Template](https://adcimon.github.io/web-stuff/html-template)
-* [Iframe](https://adcimon.github.io/web-stuff/iframe)
-* [Mouse Animation](https://adcimon.github.io/web-stuff/mouse-animation)
-* [SVG](https://adcimon.github.io/web-stuff/svg)
-* [SVG Typewriter](https://adcimon.github.io/web-stuff/svg-typewriter)
-* [SVG Waves](https://adcimon.github.io/web-stuff/svg-waves)
-* [Threejs Template](https://adcimon.github.io/web-stuff/threejs-template)
-* [Typewriter](https://adcimon.github.io/web-stuff/typewriter)
-* [Video Mosaic](https://adcimon.github.io/web-stuff/video-mosaic)
+Effects
+* [Mouse Animation](https://adcimon.github.io/web-stuff/effects/mouse-animation)
+* [SVG Typewriter](https://adcimon.github.io/web-stuff/effects/svg-typewriter)
+* [SVG Waves](https://adcimon.github.io/web-stuff/effects/svg-waves)
+* [Typewriter](https://adcimon.github.io/web-stuff/effects/typewriter)
+
+Layout
+* [Flex Container](https://adcimon.github.io/web-stuff/layout/flex-container)
+* [Video Mosaic](https://adcimon.github.io/web-stuff/layout/video-mosaic)
+
+Media
+* [GetUserMedia Video](https://adcimon.github.io/web-stuff/media/getusermedia-video)
+* [GetUserMedia Video Canvas2D](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvas2d)
+* [GetUserMedia Video CanvasWebGL](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvaswebgl)
+
+Style
+* [Dream Style](https://adcimon.github.io/web-stuff/style/dream-style)
+
+Template
+* [HTML Template](https://adcimon.github.io/web-stuff/template/html-template)
+* [Threejs Template](https://adcimon.github.io/web-stuff/template/threejs-template)
+
+Utils
+* [animator.js](https://adcimon.github.io/web-stuff/utils/animator.js)
+* [eventSystem.js](https://adcimon.github.io/web-stuff/utils/eventSystem.js)
+* [utils.css](https://adcimon.github.io/web-stuff/utils/utils.css)
+* [utils.js](https://adcimon.github.io/web-stuff/utils/utils.js)
