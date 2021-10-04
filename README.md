@@ -25,7 +25,7 @@ Template
 * [Threejs Template](https://adcimon.github.io/web-stuff/template/threejs-template)
 
 Utils
-* [animator.js](https://adcimon.github.io/web-stuff/utils/animator.js)
-* [eventSystem.js](https://adcimon.github.io/web-stuff/utils/eventSystem.js)
-* [utils.css](https://adcimon.github.io/web-stuff/utils/utils.css)
-* [utils.js](https://adcimon.github.io/web-stuff/utils/utils.js)
+* [animator.js](https://github.com/adcimon/web-stuff/blob/master/utils/animator.js)
+* [eventSystem.js](https://github.com/adcimon/web-stuff/blob/master/utils/eventSystem.js)
+* [utils.css](https://github.com/adcimon/web-stuff/blob/master/utils/utils.css)
+* [utils.js](https://github.com/adcimon/web-stuff/blob/master/utils/utils.js)
