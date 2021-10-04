@@ -37,7 +37,6 @@ function Animator()
 
 	/**
 	 * Play the animator.
-	 * @param {Function} func - The callback function.
 	 */
 	let play = function( func )
 	{

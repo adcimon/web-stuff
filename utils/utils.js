@@ -18,8 +18,6 @@ window.addEventListener("load", function()
 
 /**
  * Return a clone of the object.
- * @param {Object} object - The object to clone.
- * @return {Object} The clone of the object.
  */
 function clone( object )
 {
@@ -28,9 +26,6 @@ function clone( object )
 
 /** 
  * Return a function, that, as long as it continues to be invoked, will not be executed until N milliseconds have passed.
- * @param {Function} func - The function to execute.
- * @param {Number} wait - The time to wait.
- * @param {Boolean} immediate - Execute the function immediately.
  */
 function debounce( func, wait, immediate )
 {
@@ -62,7 +57,6 @@ function debounce( func, wait, immediate )
 /**
  * Generate a universally unique identifier.
  * Reference: RFC 4122 https://www.ietf.org/rfc/rfc4122.txt
- * @return {String} The universally unique identifier.
  */
 function uuid()
 {
@@ -72,7 +66,6 @@ function uuid()
 /**
  * Generate a universally unique identifier v4.
  * Reference: https://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid
- * @return {String} The universally unique identifier v4.
  */
 function uuidv4()
 {
@@ -91,8 +84,6 @@ function uuidv4()
 
 /**
  * Return the elements that match the specified selector.
- * @param {String} selector - The selector.
- * @return {Node, NodeList} The Node or NodeList.
  */
 HTMLElement.prototype.query = function( selector )
 {
@@ -102,7 +93,6 @@ HTMLElement.prototype.query = function( selector )
 
 /**
  * Enable the HTMLElement.
- * @param {Boolean} recursively - Enable children recursively.
  */
 HTMLElement.prototype.enable = function( recursively )
 {
@@ -121,7 +111,6 @@ HTMLElement.prototype.enable = function( recursively )
 
 /**
  * Disable the HTMLElement.
- * @param {Boolean} recursively - Disable children recursively.
  */
 HTMLElement.prototype.disable = function( recursively )
 {
@@ -150,7 +139,6 @@ HTMLElement.prototype.show = function()
 
 /**
  * Hide the HTMLElement.
- * @param {Boolean} invisible - Is the element invisible?
  */
 HTMLElement.prototype.hide = function( invisible )
 {
@@ -166,8 +154,6 @@ HTMLElement.prototype.hide = function( invisible )
 
 /** 
  * Get / Set the innerHTML of the HTMLElement.
- * @param {String} str - The html string.
- * @return {String} The innerHTML.
  */
 HTMLElement.prototype.html = function( str )
 {
@@ -182,8 +168,6 @@ HTMLElement.prototype.html = function( str )
 
 /** 
  * Get / Set the innerText of the HTMLElement.
- * @param {String} str - The text string.
- * @return {String} The textContent.
  */
 HTMLElement.prototype.text = function( str )
 {
@@ -198,7 +182,6 @@ HTMLElement.prototype.text = function( str )
 
 /** 
  * Append the HTMLElement to another HTMLElement.
- * @param {HTMLElement} child - The HTML element.
  */
 HTMLElement.prototype.append = function( child )
 {
@@ -212,7 +195,6 @@ HTMLElement.prototype.append = function( child )
 
 /** 
  * Prepend the HTMLElement to another HTMLElement sibling.
- * @param {HTMLElement} sibling - The HTML element.
  */
 HTMLElement.prototype.prepend = function( sibling )
 {
@@ -247,7 +229,6 @@ HTMLElement.prototype.removeChildren = function()
 
 /** 
  * Return the parent of the HTMLElement.
- * @return {HTMLElement} The HTMLElement parent.
  */
 HTMLElement.prototype.parent = function()
 {
@@ -256,9 +237,6 @@ HTMLElement.prototype.parent = function()
 
 /** 
  * Add an event listener to the HTMLElement.
- * @param {String} event - The event to listen for.
- * @param {Object} callback - The object that receives the notification.
- * @param {Object} options - The options object.
  */
 HTMLElement.prototype.on = function( event, callback, options )
 {
@@ -268,9 +246,6 @@ HTMLElement.prototype.on = function( event, callback, options )
 
 /** 
  * Remove an event listener from the HTMLElement.
- * @param {String} event - The event to remove for.
- * @param {Object} callback - The object that receives the notification.
- * @param {Object} options - The options object.
  */
 HTMLElement.prototype.off = function( event, callback, options )
 {
@@ -280,8 +255,6 @@ HTMLElement.prototype.off = function( event, callback, options )
 
 /** 
  * Dispatch an event on the HTMLElement.
- * @param {String} event - The event to dispatch.
- * @param {Object} args - The event arguments.
  */
 HTMLElement.prototype.emit = function( event, args = null )
 {

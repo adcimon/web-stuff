@@ -6,8 +6,6 @@ function EventSystem()
 
 	/**
 	 * Add a function that will be called whenever the specified event is emitted.
-	 * @param {String} event - The event name.
-	 * @param {Function} listener - The function to add.
 	 */
 	let on = function( event, listener )
 	{
@@ -21,8 +19,6 @@ function EventSystem()
 
 	/**
 	 * Remove the function previously added to be called whenever the specified event is emitted.
-	 * @param {String} event - The event name.
-	 * @param {Function} listener - The previously added function.
 	 */
 	let off = function( event, listener )
 	{   
@@ -38,7 +34,6 @@ function EventSystem()
 
 	/**
 	 * Emit the specified event.
-	 * @param {String} event - The event name.
 	 */
 	let emit = function( event )
 	{
