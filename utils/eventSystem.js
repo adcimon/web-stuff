@@ -1,6 +1,6 @@
 "use strict";
 
-function EventSystem()
+export function EventSystem()
 {
 	let events = { };
 
