@@ -1,6 +1,6 @@
 "use strict";
 
-function Animator()
+export function Animator()
 {
 	let handle = null;
 	let lastUpdate = null;
