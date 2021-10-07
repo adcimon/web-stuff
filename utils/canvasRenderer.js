@@ -35,17 +35,17 @@ export function CanvasRenderer( canvas )
         return null;
     }
 
-	let gl = canvas.getContext("webgl");
+    let gl = canvas.getContext("webgl");
     let handle = null;
     let pixelSource = null;
 
-	let vertexBuffer = null;
-	let indexBuffer = null;
-	let textureCoordinateBuffer = null;
+    let vertexBuffer = null;
+    let indexBuffer = null;
+    let textureCoordinateBuffer = null;
 
-	let texture = null;
+    let texture = null;
     let unit = 0;
-	let program = null;
+    let program = null;
 
     /**
      * Create the vertex, index and texture coordinate buffers.
