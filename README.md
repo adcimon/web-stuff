@@ -26,6 +26,7 @@ Template
 
 Utils
 * [animator.js](https://github.com/adcimon/web-stuff/blob/master/utils/animator.js)
+* [canvasRenderer.js](https://github.com/adcimon/web-stuff/blob/master/utils/canvasRenderer.js)
 * [eventSystem.js](https://github.com/adcimon/web-stuff/blob/master/utils/eventSystem.js)
 * [utils.css](https://github.com/adcimon/web-stuff/blob/master/utils/utils.css)
 * [utils.js](https://github.com/adcimon/web-stuff/blob/master/utils/utils.js)
