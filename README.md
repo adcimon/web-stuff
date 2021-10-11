@@ -17,15 +17,15 @@ Media
 * [GetUserMedia Video Canvas2D](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvas2d)
 * [GetUserMedia Video CanvasWebGL](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvaswebgl)
 
+Scripts
+* [animator.js](https://github.com/adcimon/web-stuff/blob/master/scripts/animator.js)
+* [canvasRenderer.js](https://github.com/adcimon/web-stuff/blob/master/scripts/canvasRenderer.js)
+* [eventSystem.js](https://github.com/adcimon/web-stuff/blob/master/scripts/eventSystem.js)
+* [utils.js](https://github.com/adcimon/web-stuff/blob/master/scripts/utils.js)
+
 Style
 * [Dream Style](https://adcimon.github.io/web-stuff/style/dream-style)
 
 Template
 * [HTML Template](https://adcimon.github.io/web-stuff/template/html-template)
 * [Threejs Template](https://adcimon.github.io/web-stuff/template/threejs-template)
-
-Utils
-* [animator.js](https://github.com/adcimon/web-stuff/blob/master/utils/animator.js)
-* [canvasRenderer.js](https://github.com/adcimon/web-stuff/blob/master/utils/canvasRenderer.js)
-* [eventSystem.js](https://github.com/adcimon/web-stuff/blob/master/utils/eventSystem.js)
-* [utils.js](https://github.com/adcimon/web-stuff/blob/master/utils/utils.js)
