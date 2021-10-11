@@ -47,6 +47,8 @@ export function CanvasRenderer( canvas )
     let unit = 0;
     let program = null;
 
+    let stream = null;
+
     /**
      * Create the vertex, index and texture coordinate buffers.
      */
@@ -280,9 +282,14 @@ export function CanvasRenderer( canvas )
     /**
      * Get the canvas' stream.
      */
-    let getStream = function()
+    let getStream = function( frameRate = undefined )
     {
-        return canvas.captureStream();
+        if( !stream )
+        {
+            stream = canvas.captureStream(frameRate);
+        }
+
+        return stream;
     };
 
     /**
