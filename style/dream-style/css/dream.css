@@ -139,6 +139,7 @@
 {
 	/* Style */
 	border-left-color: var(--dream-focus-color);
+	cursor: pointer;
 }
 
 .dream-card
@@ -147,22 +148,19 @@
 	background-color: var(--dream-item-color);
 	border-radius: 15px;
 	box-shadow: inset 0 0 2px 2px var(--dream-item-color), 0 10px 30px 6px var(--dream-card-shadow-color);
-	transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease, transform 0.3s ease-out;
 }
 
 .dream-card:hover
 {
 	/* Style */
 	box-shadow: inset 0 0 2px 2px var(--dream-item-color), 0 10px 40px 6px var(--dream-card-hover-shadow-color);
+	transform: scale(1.05);
 	cursor: pointer;
 }
 
 .dream-chip
 {
-	/* Size */
-	height: 40px;
-	width: 40px;
-
 	/* Style */
 	background-color: hsla(0, 0%, 0%, 0.2);
 	border-radius: 100%;
