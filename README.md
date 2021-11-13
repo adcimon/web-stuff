@@ -3,6 +3,7 @@
 Collection of web experiments.
 
 Effect
+* [Border Animation](https://adcimon.github.io/web-stuff/effect/border-animation)
 * [Mouse Animation](https://adcimon.github.io/web-stuff/effect/mouse-animation)
 * [SVG Typewriter](https://adcimon.github.io/web-stuff/effect/svg-typewriter)
 * [SVG Waves](https://adcimon.github.io/web-stuff/effect/svg-waves)

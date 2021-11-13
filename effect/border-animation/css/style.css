@@ -1,0 +1,157 @@
+:root
+{
+	--background-color: hsla(230, 60%, 14%, 1);
+	--border-color-1: hsla(192, 100%, 50%, 1);
+	--border-color-2: hsla(300, 100%, 42%, 1);
+	--border-background: linear-gradient(var(--border-color-1), var(--border-color-2));
+	--card-background-color: hsla(231, 60%, 6%, 1);
+}
+
+*
+{
+	/* Text */
+	font-family: 'Lucida Sans';
+	font-size: 14px;
+
+	/* Style */
+	box-sizing: border-box;
+}
+
+html
+{
+	/* Size */
+	height: 100%;
+
+	/* Space */
+	margin: 0;
+}
+
+body
+{
+	/* Layout */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* Size */
+	height: 100%;
+
+	/* Space */
+	margin: 0;
+
+	/* Style */
+	background-color: var(--background-color);
+}
+
+.card
+{
+	/* Position */
+	position: relative;
+
+	/* Size */
+	width: 300px;
+	height: 400px;
+
+	/* Style */
+	background-color: var(--card-background-color);
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px 5px black;
+	transition: transform 0.3s ease-out;
+	overflow: hidden;
+}
+
+.card:hover
+{
+	/* Style */
+	transform: scale(1.05);
+}
+
+.card-border
+{
+	/* Layout */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	/* Position */
+	position: absolute;
+
+	/* Size */
+	width: 100%;
+	height: 100%;
+}
+
+.card:hover .card-border::before
+{
+	/* Position */
+	position: absolute;
+	z-index: -1;
+
+	/* Size */
+	width: 50%;
+	height: 140%;
+
+	/* Style */
+	content: '';
+	background: var(--border-background);
+	animation: rotate 4s linear infinite;
+}
+
+.card:hover .card-border::after
+{
+	/* Position */
+	position: absolute;
+	z-index: -1;
+
+	/* Style */
+	content: '';
+	background-color: var(--card-background-color);
+	border-radius: 16px;
+	inset: 4px;
+}
+
+@keyframes rotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+.card-content
+{
+	/* Size */
+	width: 100%;
+	height: 100%;
+
+	/* Space */
+	padding: 10px;
+}
+
+.card-content img
+{
+	/* Size */
+	width: 100%;
+	height: auto;
+
+	/* Style */
+	border-radius: 5px;
+}
+
+.card-content p
+{
+	/* Size */
+	width: 100%;
+	height: auto;
+
+	/* Text */
+	text-align: justify;
+
+	/* Style */
+	color: hsla(0, 100%, 100%, 1);
+}
