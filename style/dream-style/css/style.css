@@ -1,61 +1,73 @@
+*
+{
+	/* Text */
+	text-align: justify;
+}
+
 html
 {
 	/* Size */
 	height: 100%;
 
-	/* Space*/
+	/* Space */
 	margin: 0;
 }
 
 body
 {
-	/* Size */
-	height: 100%;
-
-	/* Space */
-	margin: 0;
-}
-
-.content
-{
 	/* Layout */
 	display: flex;
 	align-content: center;
 	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
 
 	/* Size */
-	height: 100%;
-	width: 100%;
+	min-height: 100vh;
+
+	/* Space */
+	margin: 0;
+
+	/* Style */
+	background-image: url(../img/starry_sky.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1
+{
+	/* Text */
+	font-size: 3em !important;
 }
 
 .panel
 {
-	/* Size */
-	height: 75%;
-	width: 75%;
-
-	/* Style */
-	overflow: scroll;
-}
-
-.panel > div
-{
-	/* Space */
-	margin: 10px;
-}
-
-.center
-{
 	/* Layout */
 	display: flex;
 	align-content: center;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	/* Size */
+	width: 75%;
+	height: auto;
+
+	/* Space */
+	margin: 5px;
+}
+
+.row
+{
+	/* Layout */
+	flex-direction: row;
+}
+
+.left
+{
+	/* Layout */
+	align-items: flex-start;
+	align-content: start;
 }
 
 .card

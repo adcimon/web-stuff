@@ -10,7 +10,7 @@
 	--dream-focus-color: hsla(24, 100%, 56.3%, 1);
 	--dream-focus-shadow-color: hsla(0, 100%, 50%, 1);
 	--dream-focus-shadow-size: 20px;
-	--dream-font: "Alegreya Sans";
+	--dream-font: "Alegreya Sans", "Lucida Sans", sans-serif;
 	--dream-font-color: hsla(212, 100%, 89.8%, 0.75);
 	--dream-panel-border-color: hsla(233, 100%, 75.7%, 0.2);
 	--dream-panel-color: hsla(233, 40%, 21.6%, 1);
@@ -19,7 +19,7 @@
 .dream-body
 {
 	/* Text */
-	font-family: var(--dream-font), sans-serif;
+	font-family: var(--dream-font);
 
 	/* Style */
 	background-color: var(--dream-background-color);
@@ -45,7 +45,6 @@
 .dream-header
 {
 	/* Text */
-	font-size: 1.5rem;
 	font-weight: bold;
 	text-shadow: 0 0 var(--dream-focus-shadow-size) var(--dream-focus-shadow-color);
 
