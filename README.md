@@ -2,6 +2,9 @@
 
 Collection of web experiments.
 
+Design
+* [Nebula](https://adcimon.github.io/web-stuff/design/nebula)
+
 Effect
 * [Border Animation](https://adcimon.github.io/web-stuff/effect/border-animation)
 * [Mouse Animation](https://adcimon.github.io/web-stuff/effect/mouse-animation)
@@ -23,9 +26,6 @@ Script
 * [canvasRenderer.js](https://github.com/adcimon/web-stuff/blob/master/script/canvasRenderer.js)
 * [eventSystem.js](https://github.com/adcimon/web-stuff/blob/master/script/eventSystem.js)
 * [utils.js](https://github.com/adcimon/web-stuff/blob/master/script/utils.js)
-
-Style
-* [Dream Style](https://adcimon.github.io/web-stuff/style/dream-style)
 
 Template
 * [HTML Template](https://adcimon.github.io/web-stuff/template/html-template)
