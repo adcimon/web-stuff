@@ -1,0 +1,1313 @@
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qsmSW1rw.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qlmSW1rw.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qtmSW1rw.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qimSW1rw.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qumSW1rw.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qvmSW1rw.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qhmSU.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qsmSW1rw.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qlmSW1rw.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qtmSW1rw.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qimSW1rw.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qumSW1rw.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qvmSW1rw.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qhmSU.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqsmSW1rw.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqlmSW1rw.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqtmSW1rw.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqimSW1rw.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqumSW1rw.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqvmSW1rw.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqhmSU.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqsmSW1rw.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqlmSW1rw.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqtmSW1rw.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqimSW1rw.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqumSW1rw.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqvmSW1rw.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqhmSU.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqsmSW1rw.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqlmSW1rw.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqtmSW1rw.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqimSW1rw.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqumSW1rw.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqvmSW1rw.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: italic;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqhmSU.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU49qqjgSE.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4_6qjgSE.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU496qjgSE.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4-KqjgSE.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU49KqjgSE.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU49aqjgSE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4-6qj.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU49qqjgSE.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU4_6qjgSE.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU496qjgSE.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU4-KqjgSE.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU49KqjgSE.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU49aqjgSE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU4-6qj.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI49qqjgSE.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI4_6qjgSE.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI496qjgSE.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI4-KqjgSE.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI49KqjgSE.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI49aqjgSE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI4-6qj.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI49qqjgSE.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI4_6qjgSE.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI496qjgSE.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI4-KqjgSE.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI49KqjgSE.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI49aqjgSE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 800;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI4-6qj.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI49qqjgSE.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI4_6qjgSE.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI496qjgSE.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI4-KqjgSE.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI49KqjgSE.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI49aqjgSE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI4-6qj.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GhE9GixI.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GjU9GixI.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GhU9GixI.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9Gik9GixI.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9Ghk9GixI.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9Gh09GixI.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GiU9G.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dsm1Ttm4.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9du21Ttm4.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9ds21Ttm4.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dvG1Ttm4.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dsG1Ttm4.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dsW1Ttm4.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dv21T.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5GhE9GixI.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5GjU9GixI.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5GhU9GixI.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5Gik9GixI.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5Ghk9GixI.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5Gh09GixI.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5GiU9G.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGhE9GixI.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGjU9GixI.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGhU9GixI.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGik9GixI.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGhk9GixI.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGh09GixI.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: italic;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGiU9G.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEd2i1dC.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqE52i1dC.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEZ2i1dC.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEl2i1dC.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEV2i1dC.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqER2i1dC.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEp2iw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VdtvXVX.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7V5tvXVX.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VZtvXVX.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VltvXVX.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VVtvXVX.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VRtvXVX.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VptvQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqEd2i1dC.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqE52i1dC.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqEZ2i1dC.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqEl2i1dC.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqEV2i1dC.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqER2i1dC.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqEp2iw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEd2i1dC.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqE52i1dC.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEZ2i1dC.woff2) format('woff2');
+	unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEl2i1dC.woff2) format('woff2');
+	unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEV2i1dC.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqER2i1dC.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEp2iw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8ccewI9tScg.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce5I9tScg.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cceyI9tScg.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8ccezI9tScg.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85gU1EQVg.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85pU1EQVg.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85iU1EQVg.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85jU1EQVg.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5gU1EQVg.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5pU1EQVg.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5iU1EQVg.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5jU1EQVg.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5gU1EQVg.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5pU1EQVg.woff2) format('woff2');
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5iU1EQVg.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5jU1EQVg.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 900;
+	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5tU1E.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

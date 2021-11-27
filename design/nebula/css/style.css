@@ -1,3 +1,9 @@
+:root
+{
+	--background-color: hsla(243, 25%, 12%, 1);
+	--background-image: url(../img/starry_sky.jpg);
+}
+
 *
 {
 	/* Text */
@@ -25,14 +31,11 @@ body
 	min-height: 100vh;
 
 	/* Space */
-	margin-top: 0;
-	margin-bottom: 100px;
-	margin-left: 0;
-	margin-right: 0;
+	margin: 0;
 
 	/* Style */
-	background-color: hsla(243, 25%, 12%, 1) !important;
-	background-image: url(../img/starry_sky.jpg);
+	background-color: var(--background-color) !important;
+	background-image: var(--background-image);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -43,7 +46,7 @@ h1
 	font-size: 3em !important;
 }
 
-.panel
+.content-container
 {
 	/* Layout */
 	display: flex;
@@ -54,65 +57,41 @@ h1
 	justify-content: center;
 
 	/* Size */
+	width: 100%;
+	height: auto;
+}
+
+.content
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	width: 85%;
+	height: auto;
+}
+
+.card-container
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	width: 100%;
 	height: auto;
 
 	/* Space */
-	margin: 5px;
-}
-
-.row
-{
-	/* Layout */
-	flex-direction: row;
-}
-
-.left
-{
-	/* Layout */
-	align-items: flex-start;
-	align-content: start;
-}
-
-.position-bottom
-{
-	/* Position */
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-
-	/* Space */
-	margin-top: 0;
-	margin-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.width-85
-{
-	/* Size */
-	width: 85%;
-}
-
-.width-100
-{
-	/* Size */
-	width: 100%;
-}
-
-.height-100p
-{
-	/* Size */
-	height: 100px;
-}
-
-.item
-{
-	/* Size */
-	width: 70px;
-
-	/* Space */
-	margin: 5px;
+	margin-bottom: 50px;
 }
 
 .card
@@ -124,6 +103,12 @@ h1
 	/* Space */
 	margin: 10px;
 	padding: 5px;
+}
+
+.card:hover
+{
+	/* Style */
+	transform: scale(1.05);
 }
 
 .card img
@@ -143,12 +128,146 @@ h1
 	font-size: 14px;
 }
 
+.item-container
+{
+	/* Layout */
+	display: flex;
+	align-content: start;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	width: 100%;
+	height: auto;
+
+	/* Space */
+	margin-bottom: 50px;
+}
+
+.item-list
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	width: 100%;
+	height: auto;
+
+	/* Space */
+	margin: 5px;
+}
+
+.item
+{
+	/* Size */
+	width: 70px;
+
+	/* Space */
+	margin: 5px;
+}
+
+.chip-container
+{
+	/* Layout */
+	display: flex;
+	align-content: start;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	width: 100%;
+	height: auto;
+
+	/* Space */
+	margin-bottom: 50px;
+}
+
+.chip-list
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Size */
+	width: 100%;
+	height: auto;
+
+	/* Space */
+	margin: 5px;
+}
+
 .chip
 {
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
 	/* Size */
 	height: 60px;
 	width: 60px;
 
 	/* Space */
 	margin: 5px;
+}
+
+.footer
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Position */
+	position: relative;
+
+	/* Size */
+	width: 100%;
+	height: 200px;
+}
+
+.description-container
+{
+	/* Layout */
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/* Position */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	/* Size */
+	width: 85%;
+	height: 100px;
+
+	/* Space */
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
