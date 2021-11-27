@@ -13,8 +13,9 @@ Effect
 * [Typewriter](https://adcimon.github.io/web-stuff/effect/typewriter)
 
 Layout
-* [Flex Container](https://adcimon.github.io/web-stuff/layout/flex-container)
-* [Video Mosaic](https://adcimon.github.io/web-stuff/layout/video-mosaic)
+* [Basic Flex](https://adcimon.github.io/web-stuff/layout/basic-flex)
+* [Basic Grid](https://adcimon.github.io/web-stuff/layout/basic-grid)
+* [Photo Gallery Grid](https://adcimon.github.io/web-stuff/layout/photo-gallery-grid)
 
 Media
 * [GetUserMedia Video](https://adcimon.github.io/web-stuff/media/getusermedia-video)

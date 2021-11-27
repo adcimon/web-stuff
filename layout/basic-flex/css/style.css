@@ -1,0 +1,68 @@
+html
+{
+	/* Size */
+	height: 100vh;
+
+    /* Space */
+    margin: 0;
+}
+
+body
+{
+    /* Layout */
+    display: block;
+
+	/* Position */
+	position: relative;
+
+    /* Text */
+    font-family: 'Noto Sans', sans-serif;
+
+    /* Style */
+    background: hsla(0, 0%, 7%, 1);
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.flex
+{
+	/* Layout */
+	display: flex;
+	align-content: stretch;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+    /* Space */
+    padding: 5px;
+}
+
+.flex-item
+{
+    /* Size */
+    width: 240px;
+    height: 240px;
+
+    /* Space */
+    margin: 5px;
+
+    /* Text */
+    font-size: 3rem;
+    text-align: center;
+
+    /* Style */
+    background: hsla(0, 0%, 21%, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    box-shadow: hsla(222, 74%, 5%, 0.1) 0px 0.15rem 0.5rem, hsla(220, 82%, 4%, 0.1) 0px 0.075rem 0.175rem;
+    transition: all 500ms;
+}
+
+.flex-item:hover
+{
+    /* Style */
+    box-shadow: hsla(220, 82%, 4%, 0.1) 0px 0.35em 1.175em, hsla(220, 82%, 4%, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+}
