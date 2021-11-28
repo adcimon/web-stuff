@@ -1,7 +1,7 @@
 html
 {
-	/* Size */
-	height: 100vh;
+    /* Size */
+    height: 100vh;
 
     /* Space */
     margin: 0;
@@ -12,8 +12,8 @@ body
     /* Layout */
     display: block;
 
-	/* Position */
-	position: relative;
+    /* Position */
+    position: relative;
 
     /* Text */
     font-family: 'Noto Sans', sans-serif;
@@ -25,13 +25,13 @@ body
 
 .flex
 {
-	/* Layout */
-	display: flex;
-	align-content: stretch;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+    /* Layout */
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     /* Space */
     padding: 5px;

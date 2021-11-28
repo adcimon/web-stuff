@@ -1,7 +1,7 @@
 html
 {
-	/* Size */
-	height: 100vh;
+    /* Size */
+    height: 100vh;
 
     /* Space */
     margin: 0;
@@ -12,8 +12,8 @@ body
     /* Layout */
     display: block;
 
-	/* Position */
-	position: relative;
+    /* Position */
+    position: relative;
 
     /* Text */
     font-family: 'Noto Sans', sans-serif;
@@ -23,15 +23,28 @@ body
     color: hsla(0, 0%, 100%, 1);
 }
 
+.grid
+{
+    /* Layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    /* Space */
+    gap: 1rem;
+
+    /* Style */
+    overflow: hidden;
+}
+
 .grid-item
 {
     /* Layout */
-	display: flex;
-	align-content: center;
-	align-items: center;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 
     /* Size */
     width: 100%;
@@ -55,14 +68,4 @@ body
     /* Style */
     box-shadow: hsla(220, 82%, 4%, 0.1) 0px 0.35em 1.175em, hsla(220, 82%, 4%, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
-}
-
-.grid
-{
-    /* Layout */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
-    /* Space */
-    gap: 1rem;
 }
