@@ -35,6 +35,9 @@ body
 
     /* Space */
     padding: 5px;
+
+    /* Style */
+    overflow: hidden;
 }
 
 .flex-item
