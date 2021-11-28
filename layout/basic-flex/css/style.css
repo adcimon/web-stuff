@@ -21,7 +21,7 @@ body
     /* Style */
     background: hsla(0, 0%, 7%, 1);
     color: hsla(0, 0%, 100%, 1);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .flex
