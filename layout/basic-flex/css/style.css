@@ -21,6 +21,7 @@ body
     /* Style */
     background: hsla(0, 0%, 7%, 1);
     color: hsla(0, 0%, 100%, 1);
+    overflow: hidden;
 }
 
 .flex
@@ -35,9 +36,6 @@ body
 
     /* Space */
     padding: 5px;
-
-    /* Style */
-    overflow: hidden;
 }
 
 .flex-item

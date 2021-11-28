@@ -21,6 +21,7 @@ body
     /* Style */
     background: hsla(0, 0%, 7%, 1);
     color: hsla(0, 0%, 100%, 1);
+    overflow: hidden;
 }
 
 .grid
@@ -32,9 +33,6 @@ body
 
     /* Space */
     gap: 1rem;
-
-    /* Style */
-    overflow: hidden;
 }
 
 .grid-item
