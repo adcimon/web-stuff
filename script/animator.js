@@ -43,17 +43,19 @@ export function Animator()
 		if( handle )
 		{
 			console.log("Animator is already playing.");
-			return;
+			return false;
 		}
 
 		if( !(func instanceof Function) )
 		{
 			console.log("Animator callback " + func + " is not a function.");
-			return;
+			return false;
 		}
 
 		callback = func;
 		tick();
+
+		return true;
 	};
 
 	/**
@@ -63,12 +65,14 @@ export function Animator()
 	{
 		if( !handle )
 		{
-			return;
+			return false;
 		}
 
 		window.cancelAnimationFrame(handle);
 		handle = null;
 		lastUpdate = null;
+
+		return true;
 	};
 
 	return {
