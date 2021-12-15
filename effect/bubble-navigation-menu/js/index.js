@@ -6,7 +6,7 @@ function main()
 {
     const items = document.querySelectorAll(".nav-item");
 
-    function activeLink()
+    function activeItem()
     {
         items.forEach((item) =>
         {
@@ -17,6 +17,6 @@ function main()
 
     items.forEach((item) =>
     {
-        item.addEventListener("click", activeLink);
+        item.addEventListener("click", activeItem);
     });
 }
