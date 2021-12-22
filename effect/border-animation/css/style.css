@@ -45,6 +45,9 @@ body
 
 .card
 {
+	/* Layout */
+	overflow: hidden;
+
 	/* Position */
 	position: relative;
 
@@ -57,7 +60,6 @@ body
 	border-radius: 20px;
 	box-shadow: 5px 5px 15px 5px black;
 	transition: transform 0.3s ease-out;
-	overflow: hidden;
 }
 
 .card:hover
