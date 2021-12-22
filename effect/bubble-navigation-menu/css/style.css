@@ -22,6 +22,7 @@ html, body
 {
     /* Layout */
     display: block;
+    overflow: hidden;
 
     /* Position */
     position: relative;
@@ -34,7 +35,6 @@ html, body
 
     /* Style */
     background: var(--background);
-    overflow: hidden;
 }
 
 .center
