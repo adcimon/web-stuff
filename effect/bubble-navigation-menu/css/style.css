@@ -135,15 +135,18 @@ html, body
 
 .nav-menu ul li.active a .nav-icon
 {
+    /* Position */
+    transform: translateY(-32px);
+
     /* Style */
     color: var(--nav-active-color);
-    transform: translateY(-32px);
 }
 
 .nav-menu ul li a .nav-text
 {
     /* Position */
     position: absolute;
+    transform: translateY(15px);
 
     /* Space */
     padding: 2px 7px;
@@ -157,16 +160,17 @@ html, body
     border-radius: 12px;
     color: var(--nav-color);
     opacity: 0;
-    transform: translateY(15px);
     transition: 0.5s;
 }
 
 .nav-menu ul li.active a .nav-text
 {
+    /* Position */
+    transform: translateY(-4px);
+
     /* Style */
     background: var(--nav-active-color);
     opacity: 1;
-    transform: translateY(-4px);
 }
 
 .nav-indicator
