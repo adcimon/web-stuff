@@ -240,7 +240,7 @@ export function CanvasRenderer( canvas )
                 canvas.height = source.videoHeight;
             }
         }
-    }
+    };
 
     /**
      * Render the pixel source to the canvas.
