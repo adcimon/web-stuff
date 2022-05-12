@@ -1,9 +1,9 @@
 # Web Stuff
 
-Collection of web experiments.
+Collection of web experiments and resources.
 
-Design
-* [Nebula](https://adcimon.github.io/web-stuff/design/nebula)
+CSS
+* [Preflight](https://adcimon.github.io/web-stuff/css/preflight.css)
 
 Effect
 * [Border Animation](https://adcimon.github.io/web-stuff/effect/border-animation)
@@ -31,4 +31,5 @@ Script
 
 Template
 * [HTML Template](https://adcimon.github.io/web-stuff/template/html-template)
+* [Nebula](https://adcimon.github.io/web-stuff/template/nebula)
 * [Threejs Template](https://adcimon.github.io/web-stuff/template/threejs-template)
