@@ -2,9 +2,6 @@
 
 Collection of web experiments and resources.
 
-CSS
-* [Preflight](https://adcimon.github.io/web-stuff/css/preflight.css)
-
 Effect
 * [Border Animation](https://adcimon.github.io/web-stuff/effect/border-animation)
 * [Bubble Navigation Menu](https://adcimon.github.io/web-stuff/effect/bubble-navigation-menu)
