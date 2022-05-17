@@ -2,6 +2,11 @@
 
 Collection of web experiments and resources.
 
+CSS
+* [preflight.css](https://github.com/adcimon/web-stuff/blob/master/css/preflight.css)
+* [tailwind.config.js](https://github.com/adcimon/web-stuff/blob/master/css/tailwind.config.js)
+* [tailwind.output.css](https://github.com/adcimon/web-stuff/blob/master/css/tailwind.output.css)
+
 Effect
 * [Border Animation](https://adcimon.github.io/web-stuff/effect/border-animation)
 * [Bubble Navigation Menu](https://adcimon.github.io/web-stuff/effect/bubble-navigation-menu)
