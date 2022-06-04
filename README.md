@@ -33,5 +33,5 @@ Script
 
 Template
 * [HTML Template](https://adcimon.github.io/web-stuff/template/html-template)
-* [Nebula](https://adcimon.github.io/web-stuff/template/nebula)
+* [Nebula Template](https://adcimon.github.io/web-stuff/template/nebula-template)
 * [Threejs Template](https://adcimon.github.io/web-stuff/template/threejs-template)

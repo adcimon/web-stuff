@@ -55,6 +55,31 @@ function debounce( func, wait, immediate )
 }
 
 /**
+ * Convert a color from hexadecimal (#ffffff) to normalized RGB.
+ */
+function hexToRgb( color )
+{
+    const r = parseInt(color.substr(1, 2), 16) / 255.0;
+    const g = parseInt(color.substr(3, 2), 16) / 255.0;
+    const b = parseInt(color.substr(5, 2), 16) / 255.0;
+    return [r, g, b];
+}
+
+/**
+ * Convert a color from normalized RGB to hexadecimal (#ffffff).
+ */
+function rgbToHex( r, g, b )
+{
+    function componentToHex( c )
+    {
+        let hex = c.toString(16);
+        return hex.length == 1 ? "0" + hex : hex;
+    }
+
+    return "#" + componentToHex(r * 255) + componentToHex(g * 255) + componentToHex(b * 255);
+}
+
+/**
  * Generate a universally unique identifier.
  * Reference: RFC 4122 https://www.ietf.org/rfc/rfc4122.txt
  */
@@ -74,12 +99,29 @@ function uuidv4()
     );
 
     /*
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c)
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c)
     {
-        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        var r = Math.random() * 16 | 0, v = c == "x" ? r : (r & 0x3 | 0x8);
         return v.toString(16);
     });
     */
+}
+
+/**
+ * Download a text file.
+ */
+function downloadTextFile( filename, text )
+{
+    let element = document.createElement("a");
+    element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
+    element.setAttribute("download", filename);
+  
+    element.style.display = "none";
+    document.body.appendChild(element);
+  
+    element.click();
+  
+    document.body.removeChild(element);
 }
 
 /**
