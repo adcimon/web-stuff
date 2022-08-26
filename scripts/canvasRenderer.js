@@ -74,7 +74,7 @@ export function CanvasRenderer( canvas )
         gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordinateBuffer);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(textureCoordinates), gl.STATIC_DRAW);
         gl.bindBuffer(gl.ARRAY_BUFFER, null);
-    };
+    }
 
     /**
      * Create the target texture.
@@ -104,7 +104,7 @@ export function CanvasRenderer( canvas )
         let type = gl.UNSIGNED_BYTE;
         let pixels = new Uint8Array([0, 0, 0, 255]);
         gl.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels);
-    };
+    }
 
     /**
      * Update the target texture.
@@ -117,7 +117,7 @@ export function CanvasRenderer( canvas )
         let format = gl.RGBA;
         let type = gl.UNSIGNED_BYTE;
         gl.texImage2D(target, level, internalFormat, format, type, source);
-    };
+    }
 
     /**
      * Create a shader.
@@ -137,7 +137,7 @@ export function CanvasRenderer( canvas )
         }
     
         return shader;
-    };
+    }
 
     /**
      * Create the program.
@@ -167,7 +167,7 @@ export function CanvasRenderer( canvas )
         gl.linkProgram(program);
 
         return true;
-    };
+    }
 
     /**
      * Use the program.
@@ -175,7 +175,7 @@ export function CanvasRenderer( canvas )
     let useProgram = function()
     {
         gl.useProgram(program);
-    };
+    }
 
     /**
      * Bind the vertex, index and texture coordinate buffers to the program.
@@ -206,7 +206,7 @@ export function CanvasRenderer( canvas )
         gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordinateBuffer);
         gl.vertexAttribPointer(textureCoordinateAttribute, size, type, normalized, stride, offset);
         gl.enableVertexAttribArray(textureCoordinateAttribute);
-    };
+    }
 
     /**
      * Set the program uniforms.
@@ -217,7 +217,7 @@ export function CanvasRenderer( canvas )
     
         // Set the uniform to the texture unit.
         gl.uniform1i(uniform, unit);
-    };
+    }
 
     /**
      * Resize the canvas.
@@ -240,7 +240,7 @@ export function CanvasRenderer( canvas )
                 canvas.height = source.videoHeight;
             }
         }
-    };
+    }
 
     /**
      * Render the pixel source to the canvas.
@@ -256,7 +256,7 @@ export function CanvasRenderer( canvas )
         gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);
     
         handle = window.requestAnimationFrame(render);
-    };
+    }
 
     /**
      * Initialize the renderer.
@@ -269,7 +269,7 @@ export function CanvasRenderer( canvas )
         useProgram();
         bindBuffers();
         setUniforms();
-    };
+    }
 
     /**
      * Get the canvas.
@@ -277,7 +277,7 @@ export function CanvasRenderer( canvas )
     let getCanvas = function()
     {
         return canvas;
-    };
+    }
 
     /**
      * Get the canvas' stream.
@@ -290,7 +290,7 @@ export function CanvasRenderer( canvas )
         }
 
         return stream;
-    };
+    }
 
     /**
      * Validate the pixel source type.
@@ -300,7 +300,7 @@ export function CanvasRenderer( canvas )
     {
         let types = [HTMLImageElement, HTMLCanvasElement, HTMLVideoElement];
         return types.some(type => source instanceof type);
-    };
+    }
 
     /**
      * Set the pixel source. Supported types are HTMLImageElement, HTMLCanvasElement and HTMLVideoElement.
@@ -314,7 +314,7 @@ export function CanvasRenderer( canvas )
         }
 
         return false;
-    };
+    }
 
     /**
      * Set the fragment shader.
@@ -334,7 +334,7 @@ export function CanvasRenderer( canvas )
             bindBuffers();
             setUniforms();
         }
-    };
+    }
 
     /**
      * Set an int uniform.
@@ -343,7 +343,7 @@ export function CanvasRenderer( canvas )
     {
         let uniform = gl.getUniformLocation(program, name);
         gl.uniform1i(uniform, value);
-    };
+    }
 
     /**
      * Set a float uniform.
@@ -352,7 +352,7 @@ export function CanvasRenderer( canvas )
     {
         let uniform = gl.getUniformLocation(program, name);
         gl.uniform1f(uniform, value);
-    };
+    }
 
     /**
      * Set a float vector uniform.
@@ -366,7 +366,7 @@ export function CanvasRenderer( canvas )
             case 3: gl.uniform3f(uniform, vector); break;
             case 4: gl.uniform4f(uniform, vector); break;
         }
-    };
+    }
 
     /**
      * Set a float matrix uniform in column major order.
@@ -380,7 +380,7 @@ export function CanvasRenderer( canvas )
             case 9:  gl.uniformMatrix3fv(uniform, false, matrix); break;
             case 16: gl.uniformMatrix4fv(uniform, false, matrix); break;
         }
-    };
+    }
 
     /**
      * Start the rendering.
@@ -393,7 +393,7 @@ export function CanvasRenderer( canvas )
         }
 
         render();
-    };
+    }
 
     /**
      * Stop the rendering.
@@ -407,7 +407,7 @@ export function CanvasRenderer( canvas )
 
         window.cancelAnimationFrame(handle);
         handle = null;
-    };
+    }
 
     initialize();
 
