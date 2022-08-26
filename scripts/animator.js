@@ -24,7 +24,7 @@ export function Animator()
 		{
 			lastUpdate = now;
 		}
-	};
+	}
 
 	/**
 	 * Tick the animator for 1 frame.
@@ -33,7 +33,7 @@ export function Animator()
 	{
 		update();
 		handle = window.requestAnimationFrame(tick);
-	};
+	}
 
 	/**
 	 * Play the animator.
@@ -56,7 +56,7 @@ export function Animator()
 		tick();
 
 		return true;
-	};
+	}
 
 	/**
 	 * Stop the animator.
@@ -73,7 +73,7 @@ export function Animator()
 		lastUpdate = null;
 
 		return true;
-	};
+	}
 
 	return {
 		play,
