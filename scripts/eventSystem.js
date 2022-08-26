@@ -15,7 +15,7 @@ export function EventSystem()
 		}
 
 		events[event].push(listener);
-	};
+	}
 
 	/**
 	 * Remove the function previously added to be called whenever the specified event is emitted.
@@ -30,7 +30,7 @@ export function EventSystem()
 				events[event].splice(index, 1);
 			}
 		}
-	};
+	}
 
 	/**
 	 * Emit the specified event.
@@ -47,7 +47,7 @@ export function EventSystem()
 				listeners[i].apply(this, args);
 			}
 		}
-	};
+	}
 
 	return {
 		on,
