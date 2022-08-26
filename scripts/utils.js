@@ -1,22 +1,6 @@
 "use strict";
 
 /**
- * Add a utility style sheet.
- */
-window.addEventListener("load", function()
-{
-    let css = "body *[hidden] { display: none; } body *[invisible] { visibility: hidden; }";
-
-    let link = document.createElement("link");
-    link.setAttribute("type", "text/css");
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "data:text/css;charset=UTF-8," + encodeURIComponent(css));
-
-    let head = document.getElementsByTagName("head")[0];
-    head.appendChild(link);
-});
-
-/**
  * Return a clone of the object.
  */
 function clone( object )
