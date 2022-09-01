@@ -109,6 +109,25 @@ function downloadTextFile( filename, text )
 }
 
 /**
+ * Create an array of HTMLElement given a string.
+ * If a DOM element is provided, the elements are appended to the DOM element.
+ */
+function createElements( html, domElement = null )
+{
+    const template = document.createElement("template");
+    template.innerHTML = html;
+    const fragment = template.content;
+    let elements = Array.from(fragment.children);
+
+    if( domElement )
+    {
+        domElement.appendCollection(fragment.children);
+    }
+
+    return elements;
+}
+
+/**
  * Return the elements that match the specified selector.
  */
 HTMLElement.prototype.query = function( selector )
@@ -130,7 +149,6 @@ HTMLElement.prototype.enable = function( recursively )
         {
             let child = this.children[i];
             child.enable(recursively);
-            this.disabled = false;
         }
     }
 }
@@ -148,7 +166,6 @@ HTMLElement.prototype.disable = function( recursively )
         {
             let child = this.children[i];
             child.disable(recursively);
-            this.disabled = true;
         }
     }
 }
@@ -159,23 +176,14 @@ HTMLElement.prototype.disable = function( recursively )
 HTMLElement.prototype.show = function()
 {
     this.hidden = false;
-    this.removeAttribute("hidden");
-    this.removeAttribute("invisible");
 }
 
 /**
  * Hide the HTMLElement.
  */
-HTMLElement.prototype.hide = function( invisible )
+HTMLElement.prototype.hide = function()
 {
-    if( invisible )
-    {
-        this.setAttribute("invisible", "");
-    }
-    else
-    {
-        this.setAttribute("hidden", "");
-    }
+    this.hidden = true;
 }
 
 /** 
@@ -189,6 +197,7 @@ HTMLElement.prototype.html = function( str )
     }
 
     this.innerHTML = str;
+
     return this;
 }
 
@@ -203,18 +212,6 @@ HTMLElement.prototype.text = function( str )
     }
 
     this.innerText = str;
-    return this;
-}
-
-/** 
- * Append the HTMLElement to another HTMLElement.
- */
-HTMLElement.prototype.append = function( child )
-{
-    if( child instanceof HTMLElement )
-    {
-        this.appendChild(child);
-    }
 
     return this;
 }
@@ -254,14 +251,6 @@ HTMLElement.prototype.removeChildren = function()
 }
 
 /** 
- * Return the parent of the HTMLElement.
- */
-HTMLElement.prototype.parent = function()
-{
-    return this.parentNode;
-}
-
-/** 
  * Add an event listener to the HTMLElement.
  */
 HTMLElement.prototype.on = function( event, callback, options )
@@ -286,4 +275,21 @@ HTMLElement.prototype.emit = function( event, args = null )
 {
     this.dispatchEvent(event, new CustomEvent(event, { detail: args }));
     return this;
+}
+
+/**
+ * Append an HTMLCollection to the Element.
+ */
+Element.prototype.appendCollection = function( collection )
+{
+    if( !(collection instanceof HTMLCollection) )
+    {
+        return;
+    }
+
+    for( let i = 0; i < collection.length; i++ )
+    {
+        let element = collection[i];
+        this.append(element);
+    }
 }
