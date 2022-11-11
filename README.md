@@ -6,6 +6,7 @@ Effects
 * [Border Animation](https://adcimon.github.io/web-stuff/effects/border-animation)
 * [Bubble Navigation Menu](https://adcimon.github.io/web-stuff/effects/bubble-navigation-menu)
 * [Mouse Animation](https://adcimon.github.io/web-stuff/effects/mouse-animation)
+* [Neon Animation](https://adcimon.github.io/web-stuff/effects/neon-animation)
 * [SVG Typewriter](https://adcimon.github.io/web-stuff/effects/svg-typewriter)
 * [SVG Waves](https://adcimon.github.io/web-stuff/effects/svg-waves)
 * [Typewriter](https://adcimon.github.io/web-stuff/effects/typewriter)
