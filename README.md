@@ -21,17 +21,6 @@ Media
 * [GetUserMedia Video Canvas2D](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvas2d)
 * [GetUserMedia Video CanvasWebGL](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvaswebgl)
 
-Scripts
-* [animator.js](https://github.com/adcimon/web-stuff/blob/master/scripts/animator.js)
-* [canvasRenderer.js](https://github.com/adcimon/web-stuff/blob/master/scripts/canvasRenderer.js)
-* [eventSystem.js](https://github.com/adcimon/web-stuff/blob/master/scripts/eventSystem.js)
-* [utils.js](https://github.com/adcimon/web-stuff/blob/master/scripts/utils.js)
-
-Styles
-* [preflight.css](https://github.com/adcimon/web-stuff/blob/master/styles/preflight.css)
-* [tailwind.config.js](https://github.com/adcimon/web-stuff/blob/master/styles/tailwind.config.js)
-* [tailwind.output.css](https://github.com/adcimon/web-stuff/blob/master/styles/tailwind.output.css)
-
 Templates
 * [HTML Template](https://adcimon.github.io/web-stuff/templates/html-template)
 * [Nebula Template](https://adcimon.github.io/web-stuff/templates/nebula-template)
