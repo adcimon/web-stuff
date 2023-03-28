@@ -17,10 +17,10 @@ function debounce( func, wait, immediate )
 
     return function()
     {
-        let context = this;
-        let args = arguments;
+        const context = this;
+        const args = arguments;
 
-        let later = function()
+        const later = function()
         {
             timeout = null;
             if( !immediate )
@@ -29,7 +29,7 @@ function debounce( func, wait, immediate )
             }
         };
 
-        let callNow = immediate && !timeout;
+        const callNow = immediate && !timeout;
 
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
@@ -95,7 +95,7 @@ function rgbToHex( r, g, b )
 {
     function componentToHex( c )
     {
-        let hex = c.toString(16);
+        const hex = c.toString(16);
         return hex.length == 1 ? "0" + hex : hex;
     }
 
@@ -150,7 +150,7 @@ HTMLElement.prototype.enable = function( recursively )
     {
         for( let i = 0; i < this.children.length; i++ )
         {
-            let child = this.children[i];
+            const child = this.children[i];
             child.enable(recursively);
         }
     }
@@ -167,7 +167,7 @@ HTMLElement.prototype.disable = function( recursively )
     {
         for( let i = 0; i < this.children.length; i++ )
         {
-            let child = this.children[i];
+            const child = this.children[i];
             child.disable(recursively);
         }
     }
@@ -245,7 +245,7 @@ HTMLElement.prototype.remove = function()
  */
 HTMLElement.prototype.removeChildren = function()
 {
-    let child = this.firstElementChild;
+    const child = this.firstElementChild;
     while( child )
     {
         this.removeChild(child);
@@ -292,7 +292,7 @@ Element.prototype.appendCollection = function( collection )
 
     for( let i = 0; i < collection.length; i++ )
     {
-        let element = collection[i];
+        const element = collection[i];
         this.append(element);
     }
 }

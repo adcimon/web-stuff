@@ -52,24 +52,24 @@ export function CanvasRenderer( canvas )
     /**
      * Create the vertex, index and texture coordinate buffers.
      */
-    let createBuffers = function()
+    const createBuffers = function()
     {
         // Vertex buffer.
-        let vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
+        const vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
         vertexBuffer = gl.createBuffer();
         gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
         gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
         // Index buffer.
-        let indices = [0, 1, 2, 0, 2, 3];
+        const indices = [0, 1, 2, 0, 2, 3];
         indexBuffer = gl.createBuffer();
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
         gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
 
         // Texture coordinate buffer.
-        let textureCoordinates = [1, 0, 1, 1, 0, 1, 0, 0];
+        const textureCoordinates = [1, 0, 1, 1, 0, 1, 0, 0];
         textureCoordinateBuffer = gl.createBuffer();
         gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordinateBuffer);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(textureCoordinates), gl.STATIC_DRAW);
@@ -79,7 +79,7 @@ export function CanvasRenderer( canvas )
     /**
      * Create the target texture.
      */
-    let createTexture = function()
+    const createTexture = function()
     {
         texture = gl.createTexture();
     
@@ -94,44 +94,44 @@ export function CanvasRenderer( canvas )
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     
-        let target = gl.TEXTURE_2D;
-        let level = 0;
-        let internalFormat = gl.RGBA;
-        let width = 1;
-        let height = 1;
-        let border = 0;
-        let format = gl.RGBA;
-        let type = gl.UNSIGNED_BYTE;
-        let pixels = new Uint8Array([0, 0, 0, 255]);
+        const target = gl.TEXTURE_2D;
+        const level = 0;
+        const internalFormat = gl.RGBA;
+        const width = 1;
+        const height = 1;
+        const border = 0;
+        const format = gl.RGBA;
+        const type = gl.UNSIGNED_BYTE;
+        const pixels = new Uint8Array([0, 0, 0, 255]);
         gl.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels);
     }
 
     /**
      * Update the target texture.
      */
-    let updateTexture = function( source )
+    const updateTexture = function( source )
     {
-        let target = gl.TEXTURE_2D;
-        let level = 0;
-        let internalFormat = gl.RGBA;
-        let format = gl.RGBA;
-        let type = gl.UNSIGNED_BYTE;
+        const target = gl.TEXTURE_2D;
+        const level = 0;
+        const internalFormat = gl.RGBA;
+        const format = gl.RGBA;
+        const type = gl.UNSIGNED_BYTE;
         gl.texImage2D(target, level, internalFormat, format, type, source);
     }
 
     /**
      * Create a shader.
      */
-    let createShader = function( source, type )
+    const createShader = function( source, type )
     {
-        let shader = gl.createShader(type);
+        const shader = gl.createShader(type);
         gl.shaderSource(shader, source);
         gl.compileShader(shader);
     
-        let compiled = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
+        const compiled = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
         if( !compiled )
         {
-            let log = gl.getShaderInfoLog(shader);
+            const log = gl.getShaderInfoLog(shader);
             console.log(log);
             return null;
         }
@@ -142,17 +142,17 @@ export function CanvasRenderer( canvas )
     /**
      * Create the program.
      */
-    let createProgram = function( vertexSource, fragmentSource )
+    const createProgram = function( vertexSource, fragmentSource )
     {
         program = gl.createProgram();
     
-        let vertexShader = createShader(vertexSource, gl.VERTEX_SHADER);
+        const vertexShader = createShader(vertexSource, gl.VERTEX_SHADER);
         if( !vertexShader )
         {
             return false;
         }
 
-        let fragmentShader = createShader(fragmentSource, gl.FRAGMENT_SHADER);
+        const fragmentShader = createShader(fragmentSource, gl.FRAGMENT_SHADER);
         if( !fragmentShader )
         {
             return false;
@@ -172,7 +172,7 @@ export function CanvasRenderer( canvas )
     /**
      * Use the program.
      */
-    let useProgram = function()
+    const useProgram = function()
     {
         gl.useProgram(program);
     }
@@ -180,10 +180,10 @@ export function CanvasRenderer( canvas )
     /**
      * Bind the vertex, index and texture coordinate buffers to the program.
      */
-    let bindBuffers = function()
+    const bindBuffers = function()
     {
         // Vertex buffer.
-        let positionAttribute = gl.getAttribLocation(program, "a_position");
+        const positionAttribute = gl.getAttribLocation(program, "a_position");
         let size = 3;
         let type = gl.FLOAT;
         let normalized = false;
@@ -197,7 +197,7 @@ export function CanvasRenderer( canvas )
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 
         // Texture coordinate buffer.
-        let textureCoordinateAttribute = gl.getAttribLocation(program, "a_texcoord");
+        const textureCoordinateAttribute = gl.getAttribLocation(program, "a_texcoord");
         size = 2;
         type = gl.FLOAT;
         normalized = false;
@@ -211,9 +211,9 @@ export function CanvasRenderer( canvas )
     /**
      * Set the program uniforms.
      */
-    let setUniforms = function()
+    const setUniforms = function()
     {
-        let uniform = gl.getUniformLocation(program, "u_frame");
+        const uniform = gl.getUniformLocation(program, "u_frame");
     
         // Set the uniform to the texture unit.
         gl.uniform1i(uniform, unit);
@@ -222,7 +222,7 @@ export function CanvasRenderer( canvas )
     /**
      * Resize the canvas.
      */
-    let resize = function( source )
+    const resize = function( source )
     {
         if( source instanceof HTMLImageElement || source instanceof HTMLCanvasElement )
         {
@@ -245,7 +245,7 @@ export function CanvasRenderer( canvas )
     /**
      * Render the pixel source to the canvas.
      */
-    let render = function()
+    const render = function()
     {
         resize(pixelSource);
 
@@ -261,7 +261,7 @@ export function CanvasRenderer( canvas )
     /**
      * Initialize the renderer.
      */
-    let initialize = function()
+    const initialize = function()
     {
         createBuffers();
         createTexture();
@@ -274,7 +274,7 @@ export function CanvasRenderer( canvas )
     /**
      * Get the canvas.
      */
-    let getCanvas = function()
+    const getCanvas = function()
     {
         return canvas;
     }
@@ -282,7 +282,7 @@ export function CanvasRenderer( canvas )
     /**
      * Get the canvas' stream.
      */
-    let getStream = function( frameRate = undefined )
+    const getStream = function( frameRate = undefined )
     {
         if( !stream )
         {
@@ -296,16 +296,16 @@ export function CanvasRenderer( canvas )
      * Validate the pixel source type.
      * Reference: https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/texImage2D
      */
-    let validateSource = function( source )
+    const validateSource = function( source )
     {
-        let types = [HTMLImageElement, HTMLCanvasElement, HTMLVideoElement];
+        const types = [HTMLImageElement, HTMLCanvasElement, HTMLVideoElement];
         return types.some(type => source instanceof type);
     }
 
     /**
      * Set the pixel source. Supported types are HTMLImageElement, HTMLCanvasElement and HTMLVideoElement.
      */
-    let setSource = function( source )
+    const setSource = function( source )
     {
         if( validateSource(source) )
         {
@@ -319,7 +319,7 @@ export function CanvasRenderer( canvas )
     /**
      * Set the fragment shader.
      */
-    let setShader = function( shader )
+    const setShader = function( shader )
     {
         if( createProgram(VERTEX_SOURCE, shader) )
         {
@@ -339,27 +339,27 @@ export function CanvasRenderer( canvas )
     /**
      * Set an int uniform.
      */
-    let setInt = function( name, value )
+    const setInt = function( name, value )
     {
-        let uniform = gl.getUniformLocation(program, name);
+        const uniform = gl.getUniformLocation(program, name);
         gl.uniform1i(uniform, value);
     }
 
     /**
      * Set a float uniform.
      */
-    let setFloat = function( name, value )
+    const setFloat = function( name, value )
     {
-        let uniform = gl.getUniformLocation(program, name);
+        const uniform = gl.getUniformLocation(program, name);
         gl.uniform1f(uniform, value);
     }
 
     /**
      * Set a float vector uniform.
      */
-    let setVector = function( name, ...vector )
+    const setVector = function( name, ...vector )
     {
-        let uniform = gl.getUniformLocation(program, name);
+        const uniform = gl.getUniformLocation(program, name);
         switch( vector.length )
         {
             case 2: gl.uniform2f(uniform, vector); break;
@@ -371,9 +371,9 @@ export function CanvasRenderer( canvas )
     /**
      * Set a float matrix uniform in column major order.
      */
-    let setMatrix = function( name, matrix )
+    const setMatrix = function( name, matrix )
     {
-        let uniform = gl.getUniformLocation(program, name);
+        const uniform = gl.getUniformLocation(program, name);
         switch( matrix.length )
         {
             case 4:  gl.uniformMatrix2fv(uniform, false, matrix); break;
@@ -385,7 +385,7 @@ export function CanvasRenderer( canvas )
     /**
      * Start the rendering.
      */
-    let start = function()
+    const start = function()
     {
         if( handle || !pixelSource )
         {
@@ -398,7 +398,7 @@ export function CanvasRenderer( canvas )
     /**
      * Stop the rendering.
      */
-    let stop = function()
+    const stop = function()
     {
         if( !handle )
         {

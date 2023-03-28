@@ -10,10 +10,10 @@ function main()
 
 function onMouseMove( event )
 {
-	let x = event.clientX;
-	let y = event.clientY;
+	const x = event.clientX;
+	const y = event.clientY;
 
-	let particle = new Particle(document.body);
+	const particle = new Particle(document.body);
 	particle.spawn(x, y);
 }
 
@@ -21,9 +21,9 @@ function onTouchMove( event )
 {
 	event.preventDefault();
 
-	let x = event.touches[0].clientX;
-	let y = event.touches[0].clientY;
+	const x = event.touches[0].clientX;
+	const y = event.touches[0].clientY;
 
-	let particle = new Particle(document.body);
+	const particle = new Particle(document.body);
 	particle.spawn(x, y);
 }

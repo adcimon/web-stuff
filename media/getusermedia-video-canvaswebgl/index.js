@@ -77,21 +77,21 @@ function render()
 function createBuffers()
 {
 	// Vertex buffer.
-	let vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
+	const vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
 	vertexBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 	gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
 	gl.bindBuffer(gl.ARRAY_BUFFER, null);
 
 	// Index buffer.
-	let indices = [0, 1, 2, 0, 2, 3];
+	const indices = [0, 1, 2, 0, 2, 3];
 	indexBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 	gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
 	gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
 
 	// Texture coordinate buffer.
-	let textureCoordinates = [1, 0, 1, 1, 0, 1, 0, 0];
+	const textureCoordinates = [1, 0, 1, 1, 0, 1, 0, 0];
 	textureCoordinateBuffer = gl.createBuffer();
 	gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordinateBuffer);
 	gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(textureCoordinates), gl.STATIC_DRAW);
@@ -101,7 +101,7 @@ function createBuffers()
 function bindBuffers()
 {
 	// Vertex buffer.
-	let positionAttribute = gl.getAttribLocation(program, "a_position");
+	const positionAttribute = gl.getAttribLocation(program, "a_position");
 	let size = 3;
 	let type = gl.FLOAT;
 	let normalized = false;
@@ -115,7 +115,7 @@ function bindBuffers()
 	gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 
 	// Texture coordinate buffer.
-	let textureCoordinateAttribute = gl.getAttribLocation(program, "a_texcoord");
+	const textureCoordinateAttribute = gl.getAttribLocation(program, "a_texcoord");
 	size = 2;
 	type = gl.FLOAT;
 	normalized = false;
@@ -141,38 +141,38 @@ function createTexture()
 	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
 	gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
 
-	let target = gl.TEXTURE_2D;
-	let level = 0;
-	let internalFormat = gl.RGBA;
-	let width = 1;
-	let height = 1;
-	let border = 0;
-	let format = gl.RGBA;
-	let type = gl.UNSIGNED_BYTE;
-	let pixels = new Uint8Array([0, 0, 0, 255]);
+	const target = gl.TEXTURE_2D;
+	const level = 0;
+	const internalFormat = gl.RGBA;
+	const width = 1;
+	const height = 1;
+	const border = 0;
+	const format = gl.RGBA;
+	const type = gl.UNSIGNED_BYTE;
+	const pixels = new Uint8Array([0, 0, 0, 255]);
 	gl.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels);
 }
 
 function updateTexture()
 {
-	let target = gl.TEXTURE_2D;
-	let level = 0;
-	let internalFormat = gl.RGBA;
-	let format = gl.RGBA;
-	let type = gl.UNSIGNED_BYTE;
+	const target = gl.TEXTURE_2D;
+	const level = 0;
+	const internalFormat = gl.RGBA;
+	const format = gl.RGBA;
+	const type = gl.UNSIGNED_BYTE;
 	gl.texImage2D(target, level, internalFormat, format, type, video);
 }
 
 function createShader( source, type )
 {
-	let shader = gl.createShader(type);
+	const shader = gl.createShader(type);
 	gl.shaderSource(shader, source);
 	gl.compileShader(shader);
 
-	let compiled = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
+	const compiled = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
 	if( !compiled )
 	{
-		let log = gl.getShaderInfoLog(shader);
+		const log = gl.getShaderInfoLog(shader);
 		console.log(log);
 		return null;
 	}
@@ -184,8 +184,8 @@ function createProgram()
 {
 	program = gl.createProgram();
 
-	let vertexShader = createShader(vertexSource, gl.VERTEX_SHADER);
-	let fragmentShader = createShader(fragmentSource, gl.FRAGMENT_SHADER);
+	const vertexShader = createShader(vertexSource, gl.VERTEX_SHADER);
+	const fragmentShader = createShader(fragmentSource, gl.FRAGMENT_SHADER);
 
 	gl.attachShader(program, vertexShader);
 	gl.attachShader(program, fragmentShader);
@@ -203,7 +203,7 @@ function useProgram()
 
 function setUniforms()
 {
-	let uniform = gl.getUniformLocation(program, "u_frame");
+	const uniform = gl.getUniformLocation(program, "u_frame");
 
 	// Set the uniform to the texture unit.
 	gl.uniform1i(uniform, unit);

@@ -21,27 +21,27 @@ function Wave( path, settings )
 	let animationHandle = false;
 	let tween = false;
 
-	let getPoints = function( factor )
+	const getPoints = function( factor )
 	{
-	    let points = [];
+	    const points = [];
 
 	    for( let i = 0; i <= settings.bones; i++ )
 	    {
-	        let x = (i / settings.bones) * width;
-	        let sinSeed = (factor + (i + (i % settings.bones))) * settings.speed * 100;
-	        let sinHeight = Math.sin(sinSeed / 100) * settings.amplitude;
-	        let y = Math.sin(sinSeed / 100) * sinHeight + settings.height;
+	        const x = (i / settings.bones) * width;
+	        const sinSeed = (factor + (i + (i % settings.bones))) * settings.speed * 100;
+	        const sinHeight = Math.sin(sinSeed / 100) * settings.amplitude;
+	        const y = Math.sin(sinSeed / 100) * sinHeight + settings.height;
 	        points.push({ x: x, y: y });
 	    }
 
 	    return points;
-	};
+	}
 
-	let getPath = function( points )
+	const getPath = function( points )
 	{
 	    let svg = "M " + points[0].x + " " + points[0].y;
 
-	    let cp0 =
+	    const cp0 =
 	    {
 	        x: (points[1].x - points[0].x) / 2,
 	        y: points[1].y - points[0].y + points[0].y + (points[1].y - points[0].y)
@@ -54,7 +54,7 @@ function Wave( path, settings )
 	    for( let i = 1; i < points.length - 1; i++ )
 	    {
 	        //let cpLength = Math.sqrt(prevCp.x * prevCp.x + prevCp.y * prevCp.y);
-	        let cp1 =
+	        const cp1 =
 	        {
 	            x: points[i].x - prevCp.x + points[i].x,
 	            y: points[i].y - prevCp.y + points[i].y
@@ -70,28 +70,28 @@ function Wave( path, settings )
 	    svg += " L 0 " + height + " Z";
 
 	    return svg;
-	};
+	}
 
-	let render = function( deltaTime )
+	const render = function( deltaTime )
 	{
 	    totalTime += deltaTime;
 
-	    let factor = totalTime * Math.PI;
+	    const factor = totalTime * Math.PI;
 	    tween = gsap.to(path,
 	    {
 	        attr: { d: getPath(getPoints(factor)) },
 	        duration: 0,
 	        ease: Power1.easeInOut
 	    });
-	};
+	}
 
-	let update = function()
+	const update = function()
 	{
-	    let now = window.Date.now();
+	    const now = window.Date.now();
 
 	    if( lastUpdate )
 	    {
-	        let deltaTime = (now - lastUpdate) / 1000; // ms
+	        const deltaTime = (now - lastUpdate) / 1000; // ms
 	        lastUpdate = now;
 
 	        render(deltaTime);
@@ -100,37 +100,37 @@ function Wave( path, settings )
 	    {
 	        lastUpdate = now;
 	    }
-	};
+	}
 
-	let tick = function()
+	const tick = function()
 	{
 	    update();
 	    animationHandle = window.requestAnimationFrame(tick);
-	};
+	}
 
-	let resize = function()
+	const resize = function()
 	{
-	    let rect = document.querySelector(settings.container).getBoundingClientRect();
+	    const rect = document.querySelector(settings.container).getBoundingClientRect();
 	    width = rect.width;
 	    height = rect.height;
 
 	    render(0);
-	};
+	}
 
-	let play = function()
+	const play = function()
 	{
 	    if( !animationHandle )
 	    {
-	        let rect = document.querySelector(settings.container).getBoundingClientRect();
+	        const rect = document.querySelector(settings.container).getBoundingClientRect();
 	        width = rect.width;
 	        height = rect.height;
 
 	        window.addEventListener("resize", resize);
 	        animationHandle = window.requestAnimationFrame(tick);
 	    }
-	};
+	}
 
-	let pause = function()
+	const pause = function()
 	{
 	    if( animationHandle )
 	    {
@@ -138,9 +138,9 @@ function Wave( path, settings )
 	        animationHandle = false;
 	        lastUpdate = false;
 	    }
-	};
+	}
 
-	let stop = function()
+	const stop = function()
 	{
 	    pause();
 
@@ -156,7 +156,7 @@ function Wave( path, settings )
 	        clearProps: "all",
 	        attr: { d: "M0,0" }
 	    });
-	};
+	}
 
 	return {
 		play,

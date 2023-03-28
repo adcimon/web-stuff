@@ -2,8 +2,8 @@
 
 function main()
 {
-	let descriptionPopup = document.getElementById("descriptionPopup");
-	let okButton = document.getElementById("okButton");
+	const descriptionPopup = document.getElementById("descriptionPopup");
+	const okButton = document.getElementById("okButton");
 	okButton.addEventListener("click", function()
 	{
 		descriptionPopup.style.display = "none";

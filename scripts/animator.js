@@ -9,13 +9,13 @@ export function Animator()
 	/**
 	 * Update the animator time.
 	 */
-	let update = function()
+	const update = function()
 	{
-		let now = window.Date.now();
+		const now = window.Date.now();
 
 		if( lastUpdate )
 		{
-			let deltaTime = (now - lastUpdate) / 1000; // s
+			const deltaTime = (now - lastUpdate) / 1000; // s
 			lastUpdate = now;
 
 			callback(deltaTime);
@@ -29,7 +29,7 @@ export function Animator()
 	/**
 	 * Tick the animator for 1 frame.
 	 */
-	let tick = function()
+	const tick = function()
 	{
 		update();
 		handle = window.requestAnimationFrame(tick);
@@ -38,7 +38,7 @@ export function Animator()
 	/**
 	 * Play the animator.
 	 */
-	let play = function( func )
+	const play = function( func )
 	{
 		if( handle )
 		{
@@ -61,7 +61,7 @@ export function Animator()
 	/**
 	 * Stop the animator.
 	 */
-	let stop = function()
+	const stop = function()
 	{
 		if( !handle )
 		{

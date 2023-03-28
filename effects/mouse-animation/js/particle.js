@@ -2,14 +2,14 @@
 
 function Particle( container )
 {
-	let spawn = function( x, y )
+	const spawn = function( x, y )
 	{
-		let size = Math.random() * 50 + 10;
+		const size = Math.random() * 50 + 10;
 
 		x -= (size / 2);
 		y -= (size / 2);
 
-		let particle = document.createElement("div");
+		const particle = document.createElement("div");
 		particle.classList.add("particle");
 		container.appendChild(particle);
 
@@ -21,7 +21,7 @@ function Particle( container )
 			height: size,
 			background: function()
 			{
-				let hue = Math.random() * 90 + 100;
+				const hue = Math.random() * 90 + 100;
 				return "hsl(" + hue + ", 50%, 50%)";
 			}
 		});
@@ -38,7 +38,7 @@ function Particle( container )
 				container.removeChild(particle);
 			}
 		});
-	};
+	}
 
 	return {
 		spawn

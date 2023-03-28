@@ -2,7 +2,7 @@
 
 function Typewriter()
 {
-	let write = function( text, container, settings )
+	const write = function( text, container, settings )
 	{
 		let defaultSettings =
 		{
@@ -17,9 +17,9 @@ function Typewriter()
 
 		for( let i = 0; i < text.length; i++ )
 		{
-			let char = text[i];
+			const char = text[i];
 
-			let span = '<div id ="' + 'char' + i + '" ' +
+			const span = '<div id ="' + 'char' + i + '" ' +
 						'class="char" ' +
 						'style="' +
 							'animation: charAnimation ' + settings.fadeDuration + 's linear ' + (i / settings.speed) + 's forwards;' +
@@ -28,21 +28,21 @@ function Typewriter()
 						+ char +
 					'</div>';
 
-			let template = document.createElement("template");
+			const template = document.createElement("template");
 			template.innerHTML = span;
 
-			let element = template.content.firstChild;
+			const element = template.content.firstChild;
 			container.appendChild(element);
 		}
-	};
+	}
 
-	let empty = function( node )
+	const empty = function( node )
 	{
 		while( node.firstChild )
 		{
 			node.removeChild(node.lastChild);
 		}
-	};
+	}
 
 	return {
 		write

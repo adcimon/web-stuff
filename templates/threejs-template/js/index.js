@@ -30,8 +30,8 @@ function createScene()
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color(0.2, 0.2, 0.2);
 
-	let geometry = new THREE.CubeGeometry(1, 1, 1);
-	let material = new THREE.MeshBasicMaterial();
+	const geometry = new THREE.CubeGeometry(1, 1, 1);
+	const material = new THREE.MeshBasicMaterial();
 	material.color = new THREE.Color(new THREE.Color(0, 0, 0));
 	material.wireframe = true;
 	cube = new THREE.Mesh(geometry, material);
@@ -40,8 +40,8 @@ function createScene()
 
 function resize()
 {
-	let width = window.innerWidth;
-	let height = window.innerHeight;
+	const width = window.innerWidth;
+	const height = window.innerHeight;
 
 	canvas.width = width;
 	canvas.height = height;
