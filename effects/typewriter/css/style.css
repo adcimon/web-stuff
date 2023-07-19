@@ -1,89 +1,56 @@
-:root
-{
+:root {
 	--char-min-width: 12px;
 	--font-family: Comic Sans MS;
 	--text-color: rgba(0, 0, 0, 1);
 	--text-font-size: 45px;
 }
 
-html
-{
-	/* Size */
+html {
 	height: 100%;
-
-	/* Space */
 	margin: 0;
 }
 
-body
-{
-	/* Size */
-	height: 100%;
-
-	/* Space */
-	margin: 0;
-
-	/* Style */
+body {
 	background: radial-gradient(ellipse at center, rgba(196, 223, 208, 1) 35%, rgba(27, 181, 123, 1) 100%);
-
-	/* Misc */
+	height: 100%;
+	margin: 0;
 	user-select: none;
 }
 
-.container
-{
-	/* Layout */
-	display: flex;
+.container {
 	align-content: center;
 	align-items: center;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-
-	/* Size */
 	height: 100%;
+	justify-content: center;
 	width: 100%;
 }
 
-#text
-{
-	/* Text */
+#text {
+	color: var(--text-color);
 	font-family: var(--font-family);
 	font-size: var(--text-font-size);
-
-	/* Style */
-	color: var(--text-color);
 }
 
-.char
-{
-	/* Layout */
+.char {
 	display: inline-block;
-
-	/* Size */
 	min-width: var(--char-min-width);
-
-	/* Text */
-	text-align: left;
-	white-space: nowrap;
-
-	/* Style */
 	opacity: 0;
 	overflow: hidden;
+	text-align: left;
+	white-space: nowrap;
 }
 
-@keyframes charAnimation
-{
-	0%
-	{
+@keyframes charAnimation {
+	0% {
 		opacity: 0;
 	}
-	35%
-	{
+	35% {
 		opacity: 0.5;
 	}
-	100%
-	{
+	100% {
 		opacity: 1;
 	}
 }

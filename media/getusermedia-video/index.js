@@ -1,26 +1,22 @@
 var video;
 
-var constraints =
-{
+var constraints = {
 	audio: false,
-	video: true
-}
+	video: true,
+};
 
-window.addEventListener("load", main);
+window.addEventListener('load', main);
 
-function main()
-{
-	video = document.getElementById("video");
+function main() {
+	video = document.getElementById('video');
 
 	window.navigator.mediaDevices.getUserMedia(constraints).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
 }
 
-function onGetUserMediaSuccess( stream )
-{
+function onGetUserMediaSuccess(stream) {
 	video.srcObject = stream;
 }
 
-function onGetUserMediaError( error )
-{
+function onGetUserMediaError(error) {
 	alert(error);
 }

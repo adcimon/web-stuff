@@ -1,15 +1,13 @@
-"use strict";
+'use strict';
 
-window.addEventListener("load", main);
+window.addEventListener('load', main);
 
-function main()
-{
-	window.addEventListener("mousemove", onMouseMove);
-	document.body.addEventListener("touchmove", onTouchMove);
+function main() {
+	window.addEventListener('mousemove', onMouseMove);
+	document.body.addEventListener('touchmove', onTouchMove);
 }
 
-function onMouseMove( event )
-{
+function onMouseMove(event) {
 	const x = event.clientX;
 	const y = event.clientY;
 
@@ -17,8 +15,7 @@ function onMouseMove( event )
 	particle.spawn(x, y);
 }
 
-function onTouchMove( event )
-{
+function onTouchMove(event) {
 	event.preventDefault();
 
 	const x = event.touches[0].clientX;

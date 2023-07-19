@@ -1,87 +1,54 @@
-html
-{
-    /* Size */
-    height: 100vh;
-
-    /* Space */
-    margin: 0;
+html {
+	height: 100vh;
+	margin: 0;
 }
 
-body
-{
-    /* Layout */
-    display: block;
-    overflow-x: hidden;
-
-    /* Position */
-    position: relative;
-
-    /* Text */
-    font-family: 'Noto Sans', sans-serif;
-
-    /* Style */
-    background: hsla(0, 0%, 7%, 1);
-    color: hsla(0, 0%, 100%, 1);
+body {
+	background: hsla(0, 0%, 7%, 1);
+	color: hsla(0, 0%, 100%, 1);
+	display: block;
+	font-family: 'Noto Sans', sans-serif;
+	overflow-x: hidden;
+	position: relative;
 }
 
-.grid
-{
-    /* Layout */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 240px;
-
-    /* Space */
-    gap: 1rem;
+.grid {
+	display: grid;
+	gap: 1rem;
+	grid-auto-rows: 240px;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-.grid-item
-{
-    /* Layout */
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    /* Size */
-    width: 100%;
-    height: 100%;
-
-    /* Text */
-    font-size: 3rem;
-
-    /* Style */
-    background: hsla(0, 0%, 21%, 1);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 4px;
-    box-shadow: hsla(222, 74%, 5%, 0.1) 0px 0.15rem 0.5rem, hsla(220, 82%, 4%, 0.1) 0px 0.075rem 0.175rem;
-    transition: all 500ms;
+.grid-item {
+	align-content: center;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: hsla(0, 0%, 21%, 1);
+	border-radius: 4px;
+	box-shadow: hsla(222, 74%, 5%, 0.1) 0px 0.15rem 0.5rem, hsla(220, 82%, 4%, 0.1) 0px 0.075rem 0.175rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-size: 3rem;
+	height: 100%;
+	justify-content: center;
+	transition: all 500ms;
+	width: 100%;
 }
 
-.grid-item:hover
-{
-    /* Position */
-    transform: translateY(-3px) scale(1.1);
-
-    /* Style */
-    box-shadow: hsla(220, 82%, 4%, 0.1) 0px 0.35em 1.175em, hsla(220, 82%, 4%, 0.08) 0px 0.175em 0.5em;
+.grid-item:hover {
+	box-shadow: hsla(220, 82%, 4%, 0.1) 0px 0.35em 1.175em, hsla(220, 82%, 4%, 0.08) 0px 0.175em 0.5em;
+	transform: translateY(-3px) scale(1.1);
 }
 
-@media screen and (min-width: 600px)
-{
-    .grid-item-tall
-    {
-        /* Layout */
-        grid-row: span 2 / auto;
-    }
+@media screen and (min-width: 600px) {
+	.grid-item-tall {
+		grid-row: span 2 / auto;
+	}
 
-    .grid-item-wide
-    {
-        /* Layout */
-        grid-column: span 2 / auto;
-    }
+	.grid-item-wide {
+		grid-column: span 2 / auto;
+	}
 }

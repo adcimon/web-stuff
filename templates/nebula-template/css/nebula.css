@@ -1,233 +1,167 @@
-:root
-{
-	--nebula-font: "Alegreya Sans", sans-serif;
-	--nebula-font-color: hsla(212, 100%, 89.8%, 0.75);
+:root {
+	--nebula-background-color: hsla(236, 37.7%, 15.1%, 1);
+	--nebula-background-gradient-color1: hsla(233, 32%, 16%, 1);
+	--nebula-background-gradient-color2: hsla(235, 44%, 34%, 1);
+	--nebula-button-active-color: hsla(0, 100%, 50%, 1);
+	--nebula-button-color: hsla(208, 82.6%, 57.3%, 1);
+	--nebula-button-hover-color: hsla(24, 100%, 56.3%, 1);
+	--nebula-card-color: hsla(233, 100%, 75.7%, 0.2);
+	--nebula-card-hover-shadow-color: hsla(224, 100%, 50%, 0.4);
+	--nebula-card-shadow-color: hsla(224, 100%, 50%, 0);
+	--nebula-chip-color: hsla(233, 100%, 75.7%, 0.2);
+	--nebula-chip-hover-color: hsla(233, 100%, 64.3%, 0.27);
+	--nebula-chip-hover-shadow-color: hsla(224, 100%, 50%, 0.4);
 	--nebula-font-bold-color: hsla(255, 100%, 100%, 1);
-	--nebula-panel-color: hsla(233, 40%, 21.6%, 1);
-	--nebula-panel-border-color: hsla(233, 100%, 75.7%, 0.2);
+	--nebula-font-color: hsla(212, 100%, 89.8%, 0.75);
+	--nebula-font: 'Alegreya Sans', sans-serif;
 	--nebula-header1-color: hsla(24, 100%, 56.3%, 1);
 	--nebula-header1-shadow-color: hsla(0, 100%, 50%, 1);
 	--nebula-header2-color: hsla(255, 100%, 100%, 1);
 	--nebula-header2-shadow-color: hsla(0, 0%, 100%, 0.35);
-	--nebula-link-color: hsla(200, 100%, 50%, 1);
-	--nebula-link-hover-color: hsla(24, 100%, 56.3%, 1);
-	--nebula-button-color: hsla(208, 82.6%, 57.3%, 1);
-	--nebula-button-hover-color: hsla(24, 100%, 56.3%, 1);
-	--nebula-button-active-color: hsla(0, 100%, 50%, 1);
-	--nebula-card-color: hsla(233, 100%, 75.7%, 0.2);
-	--nebula-card-shadow-color: hsla(224, 100%, 50%, 0);
-	--nebula-card-hover-shadow-color: hsla(224, 100%, 50%, 0.4);
 	--nebula-item-color: hsla(233, 100%, 75.7%, 0.2);
 	--nebula-item-focus-color: hsla(24, 100%, 56.3%, 1);
-	--nebula-chip-color: hsla(233, 100%, 75.7%, 0.2);
-	--nebula-chip-hover-color: hsla(233, 100%, 64.3%, 0.27);
-	--nebula-chip-hover-shadow-color: hsla(224, 100%, 50%, 0.4);
-	--nebula-background-color: hsla(236, 37.7%, 15.1%, 1);
-	--nebula-background-gradient-color1: hsla(233, 32%, 16%, 1);
-	--nebula-background-gradient-color2: hsla(235, 44%, 34%, 1);
+	--nebula-link-color: hsla(200, 100%, 50%, 1);
+	--nebula-link-hover-color: hsla(24, 100%, 56.3%, 1);
+	--nebula-panel-border-color: hsla(233, 100%, 75.7%, 0.2);
+	--nebula-panel-color: hsla(233, 40%, 21.6%, 1);
 }
 
-.nebula-body
-{
-	/* Text */
-	font-family: var(--nebula-font);
-
-	/* Style */
+.nebula-body {
 	background-color: var(--nebula-background-color);
 	color: var(--nebula-font-color);
+	font-family: var(--nebula-font);
 }
 
-.nebula-panel
-{
-	/* Layout */
-	overflow: hidden;
-
-	/* Space */
-	padding: 10px 25px;
-
-	/* Style */
+.nebula-panel {
 	background-color: var(--nebula-panel-color);
 	background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent, hsla(0, 0%, 0%, 0.2));
-	border-color: var(--nebula-panel-border-color) var(--nebula-panel-border-color) var(--nebula-panel-border-color) var(--nebula-panel-border-color);
+	border-color: var(--nebula-panel-border-color) var(--nebula-panel-border-color) var(--nebula-panel-border-color)
+		var(--nebula-panel-border-color);
 	border-radius: 10px;
 	border-style: solid none none none;
 	border-width: 1px;
 	box-shadow: 0 0 20px -1px hsla(0, 0%, 0%, 1);
+	overflow: hidden;
+	padding: 10px 25px;
 }
 
-.nebula-header1
-{
-	/* Text */
+.nebula-header1 {
+	color: var(--nebula-header1-color);
 	font-weight: bold;
 	text-decoration: none;
 	text-shadow: 0 0 20px var(--nebula-header1-shadow-color);
-
-	/* Style */
-	color: var(--nebula-header1-color);
 }
 
-.nebula-header2
-{
-	/* Text */
+.nebula-header2 {
+	color: var(--nebula-header2-color);
 	font-family: var(--nebula-font);
 	font-weight: 700;
 	text-decoration: none;
 	text-shadow: 0 0 15px var(--nebula-header2-shadow-color);
-
-	/* Style */
-	color: var(--nebula-header2-color);
 }
 
-.nebula-bold
-{
-	/* Text */
-	font-weight: bold;
-
-	/* Style */
+.nebula-bold {
 	color: var(--nebula-font-bold-color);
+	font-weight: bold;
 }
 
-.nebula-link
-{
-	/* Text */
-	font-weight: 700;
-	text-decoration: none;
-
-	/* Style */
+.nebula-link {
 	background-color: transparent;
 	color: var(--nebula-link-color);
 	cursor: pointer;
+	font-weight: 700;
 	outline: none;
+	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
-.nebula-link:active
-{
-	/* Style */
+.nebula-link:active {
 	outline: none;
 }
 
-.nebula-link:hover
-{
-	/* Style */
+.nebula-link:hover {
 	color: var(--nebula-link-hover-color);
 	outline: none;
 }
 
-.nebula-link:focus
-{
-	/* Style */
+.nebula-link:focus {
 	outline: none;
 }
 
-.nebula-button
-{
-	/* Space */
-	padding: 0.25rem 1rem;
-
-	/* Text */
-	font-size: 1rem;
-	font-weight: 400;
-	text-decoration: none;
-
-	/* Style */
+.nebula-button {
 	background-color: var(--nebula-button-color);
-	border: none;
 	border-radius: 7px;
+	border: none;
 	color: white;
 	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0.25rem 1rem;
+	text-decoration: none;
 	transition: background-color 0.3s ease;
 }
 
-.nebula-button:hover
-{
-	/* Style */
+.nebula-button:hover {
 	background-color: var(--nebula-button-hover-color);
 }
 
-.nebula-button:active
-{
-	/* Style */
+.nebula-button:active {
 	background-color: var(--nebula-button-hover-color);
 	box-shadow: inset 0px 0px 5px var(--nebula-button-active-color);
 }
 
-.nebula-video
-{
-	/* Size */
-	object-fit: contain;
-
-	/* Style */
-	border: 1px solid hsla(0, 0%, 0%, 1);
+.nebula-video {
 	border-radius: 5px;
+	border: 1px solid hsla(0, 0%, 0%, 1);
 	box-shadow: 2px 2px 3px 0px hsla(0, 0%, 0%, 1);
+	object-fit: contain;
 	outline: none;
 }
 
-.nebula-card
-{
-	/* Style */
+.nebula-card {
 	background-color: var(--nebula-card-color);
 	border-radius: 15px;
 	box-shadow: inset 0 0 2px 2px var(--nebula-card-color), 0 10px 30px 6px var(--nebula-card-shadow-color);
 	transition: box-shadow 0.3s ease, transform 0.3s ease-out;
 }
 
-.nebula-card:hover
-{
-	/* Style */
+.nebula-card:hover {
 	box-shadow: inset 0 0 2px 2px var(--nebula-card-color), 0 10px 40px 6px var(--nebula-card-hover-shadow-color);
 	cursor: pointer;
 }
 
-.nebula-item
-{
-	/* Space */
-	padding: 0.7rem 1.6rem 0.7rem 1rem;
-
-	/* Text */
-	text-decoration: none;
-
-	/* Style */
+.nebula-item {
 	background-color: hsla(0, 0%, 0%, 0.2);
 	border-bottom: 1px solid var(--nebula-item-color);
 	border-left: 4px solid var(--nebula-item-color);
 	color: var(--nebula-font-color);
+	padding: 0.7rem 1.6rem 0.7rem 1rem;
+	text-decoration: none;
 	transition: border-color 0.3s ease;
 }
 
-.nebula-item:hover
-{
-	/* Style */
+.nebula-item:hover {
 	border-left-color: var(--nebula-item-focus-color);
 	cursor: pointer;
 }
 
-.nebula-chip
-{
-	/* Layout */
-	overflow: hidden;
-
-	/* Style */
+.nebula-chip {
 	background-color: hsla(0, 0%, 0%, 0.2);
 	border-radius: 100%;
 	border-style: solid;
 	border-width: 0;
 	box-shadow: inset 0 0 2px 1px var(--nebula-chip-color);
+	overflow: hidden;
 	transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.nebula-chip:hover
-{
-	/* Style */
+.nebula-chip:hover {
 	background-color: var(--nebula-chip-hover-color);
 	box-shadow: inset 0 0 2px 2px var(--nebula-chip-color), 0 10px 40px 6px var(--nebula-chip-hover-shadow-color);
 	cursor: pointer;
 }
 
-.nebula-background-gradient
-{
-	/* Style */
+.nebula-background-gradient {
 	background-color: var(--nebula-background-gradient-color1);
 	background-image: linear-gradient(171deg, hsla(235, 44%, 34%, 0), var(--nebula-background-gradient-color2));
 }

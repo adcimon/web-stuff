@@ -1,10 +1,10 @@
 var video, canvas, gl;
 var vertexBuffer, indexBuffer, textureCoordinateBuffer;
-var texture, unit = 0;
+var texture;
+var unit = 0;
 var program;
 
-var vertexSource =
-`
+var vertexSource = `
 attribute vec3 a_position;
 attribute vec2 a_texcoord;
 
@@ -17,8 +17,7 @@ void main()
 }
 `;
 
-var fragmentSource =
-`
+var fragmentSource = `
 precision mediump float;
 
 varying vec2 v_texcoord;
@@ -31,29 +30,26 @@ void main()
 }
 `;
 
-var constraints =
-{
+var constraints = {
 	audio: false,
-	video: true
-}
+	video: true,
+};
 
-window.addEventListener("load", main);
+window.addEventListener('load', main);
 
-function main()
-{
-	video = document.getElementById("video");
-	canvas = document.getElementById("canvas");
-	gl = canvas.getContext("webgl");
+function main() {
+	video = document.getElementById('video');
+	canvas = document.getElementById('canvas');
+	gl = canvas.getContext('webgl');
 
 	initialize();
 
-	video.addEventListener("canplay", onCanPlay);
+	video.addEventListener('canplay', onCanPlay);
 
 	window.navigator.mediaDevices.getUserMedia(constraints).then(onGetUserMediaSuccess).catch(onGetUserMediaError);
 }
 
-function initialize()
-{
+function initialize() {
 	createBuffers();
 	createTexture();
 	createProgram();
@@ -63,8 +59,7 @@ function initialize()
 	setUniforms();
 }
 
-function render()
-{
+function render() {
 	updateTexture();
 
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT | gl.STENCIL_BUFFER_BIT);
@@ -74,8 +69,7 @@ function render()
 	window.requestAnimationFrame(render);
 }
 
-function createBuffers()
-{
+function createBuffers() {
 	// Vertex buffer.
 	const vertices = [1, 1, 0, 1, -1, 0, -1, -1, 0, -1, 1, 0];
 	vertexBuffer = gl.createBuffer();
@@ -98,10 +92,9 @@ function createBuffers()
 	gl.bindBuffer(gl.ARRAY_BUFFER, null);
 }
 
-function bindBuffers()
-{
+function bindBuffers() {
 	// Vertex buffer.
-	const positionAttribute = gl.getAttribLocation(program, "a_position");
+	const positionAttribute = gl.getAttribLocation(program, 'a_position');
 	let size = 3;
 	let type = gl.FLOAT;
 	let normalized = false;
@@ -115,7 +108,7 @@ function bindBuffers()
 	gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
 
 	// Texture coordinate buffer.
-	const textureCoordinateAttribute = gl.getAttribLocation(program, "a_texcoord");
+	const textureCoordinateAttribute = gl.getAttribLocation(program, 'a_texcoord');
 	size = 2;
 	type = gl.FLOAT;
 	normalized = false;
@@ -126,8 +119,7 @@ function bindBuffers()
 	gl.enableVertexAttribArray(textureCoordinateAttribute);
 }
 
-function createTexture()
-{
+function createTexture() {
 	texture = gl.createTexture();
 
 	// Active the texture unit.
@@ -153,8 +145,7 @@ function createTexture()
 	gl.texImage2D(target, level, internalFormat, width, height, border, format, type, pixels);
 }
 
-function updateTexture()
-{
+function updateTexture() {
 	const target = gl.TEXTURE_2D;
 	const level = 0;
 	const internalFormat = gl.RGBA;
@@ -163,15 +154,13 @@ function updateTexture()
 	gl.texImage2D(target, level, internalFormat, format, type, video);
 }
 
-function createShader( source, type )
-{
+function createShader(source, type) {
 	const shader = gl.createShader(type);
 	gl.shaderSource(shader, source);
 	gl.compileShader(shader);
 
 	const compiled = gl.getShaderParameter(shader, gl.COMPILE_STATUS);
-	if( !compiled )
-	{
+	if (!compiled) {
 		const log = gl.getShaderInfoLog(shader);
 		console.log(log);
 		return null;
@@ -180,8 +169,7 @@ function createShader( source, type )
 	return shader;
 }
 
-function createProgram()
-{
+function createProgram() {
 	program = gl.createProgram();
 
 	const vertexShader = createShader(vertexSource, gl.VERTEX_SHADER);
@@ -196,33 +184,28 @@ function createProgram()
 	gl.linkProgram(program);
 }
 
-function useProgram()
-{
+function useProgram() {
 	gl.useProgram(program);
 }
 
-function setUniforms()
-{
-	const uniform = gl.getUniformLocation(program, "u_frame");
+function setUniforms() {
+	const uniform = gl.getUniformLocation(program, 'u_frame');
 
 	// Set the uniform to the texture unit.
 	gl.uniform1i(uniform, unit);
 }
 
-function onCanPlay( event )
-{
+function onCanPlay(event) {
 	canvas.width = video.videoWidth;
 	canvas.height = video.videoHeight;
 
 	window.requestAnimationFrame(render);
 }
 
-function onGetUserMediaSuccess( stream )
-{
+function onGetUserMediaSuccess(stream) {
 	video.srcObject = stream;
 }
 
-function onGetUserMediaError( error )
-{
+function onGetUserMediaError(error) {
 	alert(error);
 }

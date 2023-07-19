@@ -1,159 +1,99 @@
-:root
-{
+:root {
 	--background-color: hsla(230, 60%, 14%, 1);
+	--border-background: linear-gradient(var(--border-color-1), var(--border-color-2));
 	--border-color-1: hsla(192, 100%, 50%, 1);
 	--border-color-2: hsla(300, 100%, 42%, 1);
-	--border-background: linear-gradient(var(--border-color-1), var(--border-color-2));
 	--card-background-color: hsla(231, 60%, 6%, 1);
 }
 
-*
-{
-	/* Text */
+* {
+	box-sizing: border-box;
 	font-family: 'Lucida Sans';
 	font-size: 14px;
-
-	/* Style */
-	box-sizing: border-box;
 }
 
-html
-{
-	/* Size */
+html {
 	height: 100%;
-
-	/* Space */
 	margin: 0;
 }
 
-body
-{
-	/* Layout */
-	display: flex;
+body {
 	align-items: center;
-	justify-content: center;
-
-	/* Size */
-	height: 100%;
-
-	/* Space */
-	margin: 0;
-
-	/* Style */
 	background-color: var(--background-color);
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	margin: 0;
 }
 
-.card
-{
-	/* Layout */
-	overflow: hidden;
-
-	/* Position */
-	position: relative;
-
-	/* Size */
-	width: 300px;
-	height: 400px;
-
-	/* Style */
+.card {
 	background-color: var(--card-background-color);
 	border-radius: 20px;
 	box-shadow: 5px 5px 15px 5px black;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
 	transition: transform 0.3s ease-out;
+	width: 300px;
 }
 
-.card:hover
-{
-	/* Style */
+.card:hover {
 	transform: scale(1.05);
 }
 
-.card-border
-{
-	/* Layout */
-	display: flex;
+.card-border {
 	align-items: center;
+	display: flex;
+	height: 100%;
 	justify-content: center;
 	overflow: hidden;
-
-	/* Position */
 	position: absolute;
-
-	/* Size */
 	width: 100%;
-	height: 100%;
 }
 
-.card:hover .card-border::before
-{
-	/* Position */
-	position: absolute;
-	z-index: -1;
-
-	/* Size */
-	width: 50%;
-	height: 140%;
-
-	/* Style */
-	content: '';
-	background: var(--border-background);
+.card:hover .card-border::before {
 	animation: rotate 4s linear infinite;
+	background: var(--border-background);
+	content: '';
+	height: 140%;
+	position: absolute;
+	width: 50%;
+	z-index: -1;
 }
 
-.card:hover .card-border::after
-{
-	/* Position */
-	position: absolute;
-	z-index: -1;
-
-	/* Style */
-	content: '';
+.card:hover .card-border::after {
 	background-color: var(--card-background-color);
 	border-radius: 16px;
+	content: '';
 	inset: 4px;
+	position: absolute;
+	z-index: -1;
 }
 
-@keyframes rotate
-{
-	0%
-	{
+@keyframes rotate {
+	0% {
 		transform: rotate(0deg);
 	}
-	100%
-	{
+	100% {
 		transform: rotate(360deg);
 	}
 }
 
-.card-content
-{
-	/* Size */
-	width: 100%;
+.card-content {
 	height: 100%;
-
-	/* Space */
 	padding: 10px;
+	width: 100%;
 }
 
-.card-content img
-{
-	/* Size */
-	width: 100%;
-	height: auto;
-
-	/* Style */
+.card-content img {
 	border-radius: 5px;
+	height: auto;
+	width: 100%;
 }
 
-.card-content p
-{
-	/* Size */
-	width: 100%;
-	height: auto;
-
-	/* Text */
-	text-align: justify;
-
-	/* Style */
+.card-content p {
 	color: hsla(0, 100%, 100%, 1);
+	height: auto;
+	text-align: justify;
+	width: 100%;
 }

@@ -3,7 +3,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qsmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qsmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -12,7 +13,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qlmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qlmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -21,7 +23,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qtmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qtmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 
@@ -30,7 +33,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qimSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qimSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 
@@ -39,7 +43,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qumSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qumSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
@@ -48,7 +53,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qvmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qvmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -58,7 +64,8 @@
 	font-style: italic;
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qhmSU.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -66,7 +73,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qsmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qsmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -75,7 +83,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qlmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qlmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -84,7 +93,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qtmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qtmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 
@@ -93,7 +103,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qimSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qimSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 
@@ -102,7 +113,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qumSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qumSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
@@ -111,7 +123,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qvmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qvmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -121,7 +134,8 @@
 	font-style: italic;
 	font-weight: 500;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbSv5qhmSU.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -129,7 +143,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqsmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqsmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -138,7 +153,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqlmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqlmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -147,7 +163,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqtmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqtmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 
@@ -156,7 +173,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqimSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqimSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 
@@ -165,7 +183,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqumSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqumSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
@@ -174,7 +193,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 700;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqvmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqvmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -184,7 +204,8 @@
 	font-style: italic;
 	font-weight: 700;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqhmSU.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -192,7 +213,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 800;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqsmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqsmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -201,7 +223,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 800;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqlmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqlmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -210,7 +233,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 800;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqtmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqtmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 
@@ -219,7 +243,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 800;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqimSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqimSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 
@@ -228,7 +253,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 800;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqumSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqumSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
@@ -237,7 +263,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 800;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqvmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqvmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -247,7 +274,8 @@
 	font-style: italic;
 	font-weight: 800;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqhmSU.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -255,7 +283,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 900;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqsmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqsmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
@@ -264,7 +293,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 900;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqlmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqlmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -273,7 +303,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 900;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqtmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqtmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 
@@ -282,7 +313,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 900;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqimSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqimSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 
@@ -291,7 +323,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 900;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqumSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqumSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 
@@ -300,7 +333,8 @@
 	font-family: 'Alegreya';
 	font-style: italic;
 	font-weight: 900;
-	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqvmSW1rw.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqvmSW1rw.woff2)
+		format('woff2');
 	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
@@ -310,7 +344,8 @@
 	font-style: italic;
 	font-weight: 900;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqhmSU.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -373,7 +408,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4-6qj.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -436,7 +472,8 @@
 	font-style: normal;
 	font-weight: 500;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGxBU4-6qj.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -499,7 +536,8 @@
 	font-style: normal;
 	font-weight: 700;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI4-6qj.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -562,7 +600,8 @@
 	font-style: normal;
 	font-weight: 800;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI4-6qj.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -625,7 +664,8 @@
 	font-style: normal;
 	font-weight: 900;
 	src: url(https://fonts.gstatic.com/s/alegreya/v19/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI4-6qj.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -688,7 +728,8 @@
 	font-style: italic;
 	font-weight: 300;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GiU9G.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -751,7 +792,8 @@
 	font-style: italic;
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dv21T.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -814,7 +856,8 @@
 	font-style: italic;
 	font-weight: 500;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VTE5GiU9G.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -877,7 +920,8 @@
 	font-style: italic;
 	font-weight: 700;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VBEhGiU9G.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -940,7 +984,8 @@
 	font-style: normal;
 	font-weight: 300;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEp2iw.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1003,7 +1048,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VptvQ.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1066,7 +1112,8 @@
 	font-style: normal;
 	font-weight: 500;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5alOqEp2iw.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1129,7 +1176,8 @@
 	font-style: normal;
 	font-weight: 700;
 	src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEp2iw.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1174,7 +1222,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1219,7 +1268,8 @@
 	font-style: normal;
 	font-weight: 600;
 	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1264,7 +1314,8 @@
 	font-style: normal;
 	font-weight: 700;
 	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic-ext */
@@ -1309,5 +1360,6 @@
 	font-style: normal;
 	font-weight: 900;
 	src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5tU1E.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

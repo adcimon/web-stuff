@@ -1,91 +1,58 @@
-:root
-{
+:root {
 	--depths-color: rgba(52, 152, 219, 1);
-	--sky-color: rgba(183, 232, 235, 1);
 	--light-color: rgba(255, 254, 234, 1);
+	--sky-color: rgba(183, 232, 235, 1);
 	--wave1-color: rgba(70, 230, 240, 1);
 	--wave2-color: rgba(1, 168, 234, 0.7);
 }
 
-html
-{
-	/* Size */
+html {
 	height: 100%;
-
-	/* Space */
 	margin: 0;
 }
 
-body
-{
-	/* Size */
-	height: 100%;
-
-	/* Space */
-	margin: 0;
-
-	/* Style */
+body {
 	background: radial-gradient(ellipse at center, var(--light-color) 35%, var(--sky-color) 100%);
+	height: 100%;
+	margin: 0;
 }
 
-.sky
-{
-	/* Size */
+.sky {
 	height: 200px;
 	width: 100%;
 }
 
-.sea
-{
-	/* Size */
+.sea {
 	height: 100%;
 	width: 100%;
 }
 
-.surface
-{
-	/* Position */
-	position: relative;
-
-	/* Size */
+.surface {
 	height: 300px;
+	position: relative;
 	width: 100%;
 }
 
-.wave
-{
-	/* Position */
-	position: absolute;
-
-	/* Size */
+.wave {
 	height: 100%;
+	position: absolute;
 	width: 100%;
 }
 
-.wave1-color
-{
-	/* Style */
+.wave1-color {
 	stop-color: var(--wave1-color);
 }
 
-.wave2-color
-{
-	/* Style */
+.wave2-color {
 	stop-color: var(--wave2-color);
 }
 
-.depths
-{
-	/* Size */
+.depths {
+	background-color: var(--depths-color);
 	height: 100%;
 	width: 100%;
-
-	/* Style */
-	background-color: var(--depths-color);
 }
 
-.depths-color
-{
-	/* Style */
+.depths-color {
 	stop-color: var(--depths-color);
 }

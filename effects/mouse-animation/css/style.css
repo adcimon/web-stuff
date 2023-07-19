@@ -1,28 +1,16 @@
-html
-{
-	/* Size */
+html {
 	height: 100%;
-
-	/* Space */
 	margin: 0;
 }
 
-body
-{
-	/* Size */
+body {
 	height: 100%;
-
-	/* Space */
 	margin: 0;
 }
 
-.particle
-{
-	/* Position */
-	position: absolute;
-	left: 0;
-	top: 0;
-
-	/* Style */
+.particle {
 	border-radius: 50%;
+	left: 0;
+	position: absolute;
+	top: 0;
 }

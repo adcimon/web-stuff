@@ -1,46 +1,40 @@
-"use strict";
+'use strict';
 
-function Particle( container )
-{
-	const spawn = function( x, y )
-	{
+function Particle(container) {
+	const spawn = function (x, y) {
 		const size = Math.random() * 50 + 10;
 
-		x -= (size / 2);
-		y -= (size / 2);
+		x -= size / 2;
+		y -= size / 2;
 
-		const particle = document.createElement("div");
-		particle.classList.add("particle");
+		const particle = document.createElement('div');
+		particle.classList.add('particle');
 		container.appendChild(particle);
 
-		gsap.set(particle,
-		{
-			x: x, 
+		gsap.set(particle, {
+			x: x,
 			y: y,
 			width: size,
 			height: size,
-			background: function()
-			{
+			background: function () {
 				const hue = Math.random() * 90 + 100;
-				return "hsl(" + hue + ", 50%, 50%)";
-			}
+				return 'hsl(' + hue + ', 50%, 50%)';
+			},
 		});
 
-		gsap.to(particle, Math.random() * 2 + 1,
-		{
+		gsap.to(particle, Math.random() * 2 + 1, {
 			x: x + (Math.random() - 0.5) * 200,
 			y: y + (Math.random() - 0.5) * 200,
 			opacity: 0,
 			scale: 0,
 			ease: Power2.easeOut,
-			onComplete: function()
-			{
+			onComplete: function () {
 				container.removeChild(particle);
-			}
+			},
 		});
-	}
+	};
 
 	return {
-		spawn
+		spawn,
 	};
 }

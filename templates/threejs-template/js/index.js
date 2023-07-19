@@ -2,20 +2,18 @@ var canvas, renderer;
 var scene, camera, controls;
 var cube;
 
-window.addEventListener("load", main);
-window.addEventListener("resize", resize);
+window.addEventListener('load', main);
+window.addEventListener('resize', resize);
 
-function main()
-{
+function main() {
 	initialize();
 	createScene();
 	resize();
 	render();
 }
 
-function initialize()
-{
-	canvas = window.document.getElementById("canvas");
+function initialize() {
+	canvas = window.document.getElementById('canvas');
 
 	renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
 
@@ -25,8 +23,7 @@ function initialize()
 	controls = new THREE.OrbitControls(camera, renderer.domElement);
 }
 
-function createScene()
-{
+function createScene() {
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color(0.2, 0.2, 0.2);
 
@@ -38,8 +35,7 @@ function createScene()
 	scene.add(cube);
 }
 
-function resize()
-{
+function resize() {
 	const width = window.innerWidth;
 	const height = window.innerHeight;
 
@@ -52,8 +48,7 @@ function resize()
 	camera.updateProjectionMatrix();
 }
 
-function render()
-{
+function render() {
 	cube.rotation.y += 0.01;
 
 	controls.update();
