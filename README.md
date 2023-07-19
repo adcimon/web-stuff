@@ -1,6 +1,6 @@
 # Web Stuff
 
-Collection of web experiments and resources.
+Collection of web experiments.
 
 Effects
 * [Border Animation](https://adcimon.github.io/web-stuff/effects/border-animation)
