@@ -22,6 +22,5 @@ Media
 * [GetUserMedia Video CanvasWebGL](https://adcimon.github.io/web-stuff/media/getusermedia-video-canvaswebgl)
 
 Templates
-* [HTML Template](https://adcimon.github.io/web-stuff/templates/html-template)
 * [Nebula Template](https://adcimon.github.io/web-stuff/templates/nebula-template)
 * [Threejs Template](https://adcimon.github.io/web-stuff/templates/threejs-template)
