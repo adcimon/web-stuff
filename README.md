@@ -2,6 +2,7 @@
 
 Collection of web experiments.
 
+* [3D Carousel](https://adcimon.github.io/web-stuff/3d-carousel)
 * [Basic Flex](https://adcimon.github.io/web-stuff/basic-flex)
 * [Basic Grid](https://adcimon.github.io/web-stuff/basic-grid)
 * [Border Animation](https://adcimon.github.io/web-stuff/border-animation)

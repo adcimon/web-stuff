@@ -1,0 +1,108 @@
+:root {
+	--count: 0;
+	--perspective: 2000px;
+	--x-rotation: -16;
+	--y-rotation: 0;
+	--z-radius: 550;
+	--period: 30s;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	background-color: #d2d2d2;
+	background-image: repeating-linear-gradient(to right, transparent 0 100px, #25283b22 100px 101px),
+		repeating-linear-gradient(to bottom, transparent 0 100px, #25283b22 100px 101px);
+	flex-direction: column;
+	gap: 1rem;
+	height: 100vh;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.container {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.carousel {
+	transition: transform 500ms ease-in-out;
+	height: 250px;
+	left: calc(50% - 100px);
+	pointer-events: none;
+	position: absolute;
+	top: 10%;
+	transform: perspective(var(--perspective)) rotateX(calc(var(--x-rotation) * 1deg))
+		rotateY(calc(var(--y-rotation) * 1deg));
+	transform-style: preserve-3d;
+	width: 200px;
+	z-index: 2;
+}
+
+.carousel-animation {
+	animation: carouselAnimation var(--period) linear infinite;
+}
+
+@keyframes carouselAnimation {
+	from {
+		transform: perspective(var(--perspective)) rotateX(calc(var(--x-rotation) * 1deg)) rotateY(0deg);
+	}
+	to {
+		transform: perspective(var(--perspective)) rotateX(calc(var(--x-rotation) * 1deg)) rotateY(360deg);
+	}
+}
+
+.carousel .item {
+	inset: 0 0 0 0;
+	pointer-events: all;
+	position: absolute;
+	transform: rotateY(calc((var(--position) - 1) * (360 / var(--count)) * 1deg))
+		translateZ(calc(var(--z-radius) * 1px));
+}
+
+.carousel .item img {
+	border-color: transparent;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.carousel .item img:hover {
+	border-color: cyan;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+	.carousel {
+		height: 200px;
+		left: calc(50% - 80px);
+		width: 160px;
+	}
+
+	.carousel .item {
+		--z-radius: 300;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.carousel {
+		height: 150px;
+		left: calc(50% - 50px);
+		width: 100px;
+	}
+
+	.carousel .item {
+		--z-radius: 180;
+	}
+}
