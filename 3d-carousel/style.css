@@ -75,12 +75,14 @@ body {
 	border-width: 2px;
 	height: 100%;
 	object-fit: cover;
+	transition: transform 0.2s ease-in-out;
 	width: 100%;
 }
 
 .carousel .item img:hover {
 	border-color: green;
 	cursor: pointer;
+	transform: scale3d(1.1, 1.1, 1);
 }
 
 @media screen and (max-width: 1023px) {
