@@ -35,11 +35,11 @@ body {
 
 .carousel {
 	transition: transform 500ms ease-in-out;
-	height: 250px;
+	height: 300px;
 	left: calc(50% - 100px);
 	pointer-events: none;
 	position: absolute;
-	top: 10%;
+	top: 20%;
 	transform: perspective(var(--perspective)) rotateX(calc(var(--x-rotation) * 1deg))
 		rotateY(calc(var(--y-rotation) * 1deg));
 	transform-style: preserve-3d;
@@ -79,7 +79,7 @@ body {
 }
 
 .carousel .item img:hover {
-	border-color: cyan;
+	border-color: green;
 	cursor: pointer;
 }
 
